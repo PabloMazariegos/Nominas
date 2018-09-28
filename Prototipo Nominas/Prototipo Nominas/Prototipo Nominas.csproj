@@ -57,6 +57,18 @@
     <Compile Include="CambioServer.Designer.cs">
       <DependentUpon>CambioServer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Liquidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liquidacion.Designer.cs">
+      <DependentUpon>Liquidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoPago.Designer.cs">
+      <DependentUpon>IngresoPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="IngresoEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,8 +119,14 @@
     <EmbeddedResource Include="CambioServer.resx">
       <DependentUpon>CambioServer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Liquidacion.resx">
+      <DependentUpon>Liquidacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IngresoEmpleado.resx">
       <DependentUpon>IngresoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoPago.resx">
+      <DependentUpon>IngresoPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IngresoPrestacionescs.resx">
       <DependentUpon>IngresoPrestacionescs.cs</DependentUpon>

@@ -219,5 +219,13 @@ namespace Prototipo_Nominas
             chld.StartPosition = FormStartPosition.CenterScreen;
             chld.Show();
         }
+
+        private void liquidacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Liquidacion pago = new Liquidacion();
+            pago.MdiParent = this;
+            pago.StartPosition = FormStartPosition.CenterScreen;
+            pago.Show();
+        }
     }
 }

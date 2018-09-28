@@ -52,6 +52,7 @@
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambioDeServidorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.liquidacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -138,7 +139,8 @@
             // 
             this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mantenimientoToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.toolStripMenuItem1,
+            this.liquidacionToolStripMenuItem});
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
             this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.procesosToolStripMenuItem.Text = "Procesos";
@@ -238,6 +240,13 @@
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
+            // liquidacionToolStripMenuItem
+            // 
+            this.liquidacionToolStripMenuItem.Name = "liquidacionToolStripMenuItem";
+            this.liquidacionToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.liquidacionToolStripMenuItem.Text = "Liquidacion";
+            this.liquidacionToolStripMenuItem.Click += new System.EventHandler(this.liquidacionToolStripMenuItem_Click);
+            // 
             // MDINominas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,6 +296,7 @@
         private System.Windows.Forms.ToolStripMenuItem mantenimientoDeAreasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem asignacionDeConceptosRetributivosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem liquidacionToolStripMenuItem;
     }
 }
 

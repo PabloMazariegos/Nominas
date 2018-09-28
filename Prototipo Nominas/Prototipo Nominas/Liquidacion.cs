@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Prototipo_Nominas
 {
-    public partial class IngresoPrestacionescs : Form
+    public partial class Liquidacion : Form
     {
-        public IngresoPrestacionescs()
+        public Liquidacion()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }
