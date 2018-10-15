@@ -227,5 +227,29 @@ namespace Prototipo_Nominas
             pago.StartPosition = FormStartPosition.CenterScreen;
             pago.Show();
         }
+
+        private void reporteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cierre_de_nominas nomina = new Cierre_de_nominas();
+            nomina.MdiParent = this;
+            nomina.StartPosition = FormStartPosition.CenterScreen;
+            nomina.Show();
+        }
+
+        private void reporteDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cierre_de_nominas empleado = new Cierre_de_nominas();
+            empleado.MdiParent = this;
+            empleado.StartPosition = FormStartPosition.CenterScreen;
+            empleado.Show();
+        }
+
+        private void reporteDeSueldosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cierre_de_nominas sueldos = new Cierre_de_nominas();
+            sueldos.MdiParent = this;
+            sueldos.StartPosition = FormStartPosition.CenterScreen;
+            sueldos.Show();
+        }
     }
 }
