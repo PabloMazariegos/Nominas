@@ -107,7 +107,7 @@ namespace Prototipo_Nominas
 
         private void ingresoDeEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            IngresoEmpleado chld = new IngresoEmpleado();
+            EmpleadoIngreso chld = new EmpleadoIngreso();
             chld.MdiParent = this;
             chld.StartPosition = FormStartPosition.CenterScreen;
             chld.Show();   

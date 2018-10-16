@@ -57,6 +57,12 @@
     <Compile Include="CambioServer.Designer.cs">
       <DependentUpon>CambioServer.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmpleadoIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoIngreso.Designer.cs">
+      <DependentUpon>EmpleadoIngreso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Liquidacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,12 +74,6 @@
     </Compile>
     <Compile Include="IngresoPago.Designer.cs">
       <DependentUpon>IngresoPago.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IngresoEmpleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IngresoEmpleado.Designer.cs">
-      <DependentUpon>IngresoEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="IngresoPrestacionescs.cs">
       <SubType>Form</SubType>
@@ -119,11 +119,11 @@
     <EmbeddedResource Include="CambioServer.resx">
       <DependentUpon>CambioServer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoIngreso.resx">
+      <DependentUpon>EmpleadoIngreso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Liquidacion.resx">
       <DependentUpon>Liquidacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IngresoEmpleado.resx">
-      <DependentUpon>IngresoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IngresoPago.resx">
       <DependentUpon>IngresoPago.cs</DependentUpon>
