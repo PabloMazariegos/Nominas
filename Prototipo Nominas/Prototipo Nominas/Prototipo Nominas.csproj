@@ -119,6 +119,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte Empleado.Designer.cs">
+      <DependentUpon>Reporte Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte Sueldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte Sueldos.Designer.cs">
+      <DependentUpon>Reporte Sueldos.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Asignacion de area.resx">
       <DependentUpon>Asignacion de area.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +177,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reporte Empleado.resx">
+      <DependentUpon>Reporte Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte Sueldos.resx">
+      <DependentUpon>Reporte Sueldos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

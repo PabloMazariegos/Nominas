@@ -238,7 +238,7 @@ namespace Prototipo_Nominas
 
         private void reporteDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Cierre_de_nominas empleado = new Cierre_de_nominas();
+            Reporte_Empleado empleado = new Reporte_Empleado();
             empleado.MdiParent = this;
             empleado.StartPosition = FormStartPosition.CenterScreen;
             empleado.Show();
@@ -246,7 +246,7 @@ namespace Prototipo_Nominas
 
         private void reporteDeSueldosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Cierre_de_nominas sueldos = new Cierre_de_nominas();
+            Reporte_Sueldos sueldos = new Reporte_Sueldos();
             sueldos.MdiParent = this;
             sueldos.StartPosition = FormStartPosition.CenterScreen;
             sueldos.Show();

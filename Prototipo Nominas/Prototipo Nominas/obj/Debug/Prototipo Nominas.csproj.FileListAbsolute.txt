@@ -55,3 +55,25 @@ C:\Users\Kevin\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\
 C:\Users\Kevin\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo Nominas.csproj.GenerateResource.Cache
 C:\Users\Kevin\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.IngresoPago.resources
 C:\Users\Kevin\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.Liquidacion.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\bin\Debug\Prototipo Nominas.exe.config
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\bin\Debug\Prototipo Nominas.exe
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\bin\Debug\Prototipo Nominas.pdb
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo Nominas.csprojResolveAssemblyReference.cache
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.Asignacion_de_area.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.CambioServer.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.Liquidacion.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.IngresoEmpleado.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.IngresoPago.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.IngresoPrestacionescs.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.Login.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.mantenimientoAreas.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.MantenimientoConceptosR.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.mantenimientoEmpleado.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.MDINominas.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.Properties.Resources.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo Nominas.csproj.GenerateResource.Cache
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo Nominas.exe
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo Nominas.pdb
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.Cierre_de_nominas.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.Reporte_Empleado.resources
+C:\Users\Richie\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.Reporte_Sueldos.resources
