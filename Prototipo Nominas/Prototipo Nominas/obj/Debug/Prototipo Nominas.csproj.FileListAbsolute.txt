@@ -55,3 +55,6 @@ C:\Users\Kevin\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\
 C:\Users\Kevin\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo Nominas.csproj.GenerateResource.Cache
 C:\Users\Kevin\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.IngresoPago.resources
 C:\Users\Kevin\Documents\GitHub\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo_Nominas.Liquidacion.resources
+C:\Users\srjefers\Documents\analisis\Nominas\Prototipo Nominas\Prototipo Nominas\bin\Debug\Prototipo Nominas.exe.config
+C:\Users\srjefers\Documents\analisis\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo Nominas.exe
+C:\Users\srjefers\Documents\analisis\Nominas\Prototipo Nominas\Prototipo Nominas\obj\Debug\Prototipo Nominas.pdb
