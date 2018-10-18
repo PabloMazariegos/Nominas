@@ -45,6 +45,7 @@
             this.mantenimientoDeAreasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.asignacionDeConceptosRetributivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.liquidacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,7 +53,6 @@
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambioDeServidorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.liquidacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -191,6 +191,13 @@
             this.asignacionDeConceptosRetributivosToolStripMenuItem.Text = "Asignacion de conceptos retributivos";
             this.asignacionDeConceptosRetributivosToolStripMenuItem.Click += new System.EventHandler(this.asignacionDeConceptosRetributivosToolStripMenuItem_Click);
             // 
+            // liquidacionToolStripMenuItem
+            // 
+            this.liquidacionToolStripMenuItem.Name = "liquidacionToolStripMenuItem";
+            this.liquidacionToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.liquidacionToolStripMenuItem.Text = "Liquidacion";
+            this.liquidacionToolStripMenuItem.Click += new System.EventHandler(this.liquidacionToolStripMenuItem_Click);
+            // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -206,18 +213,21 @@
             this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
             this.reporteToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.reporteToolStripMenuItem.Text = "Reporte de nominas";
+            this.reporteToolStripMenuItem.Click += new System.EventHandler(this.reporteToolStripMenuItem_Click);
             // 
             // reporteDeEmpleadosToolStripMenuItem
             // 
             this.reporteDeEmpleadosToolStripMenuItem.Name = "reporteDeEmpleadosToolStripMenuItem";
             this.reporteDeEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.reporteDeEmpleadosToolStripMenuItem.Text = "Reporte de empleados";
+            this.reporteDeEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.reporteDeEmpleadosToolStripMenuItem_Click);
             // 
             // reporteDeSueldosToolStripMenuItem
             // 
             this.reporteDeSueldosToolStripMenuItem.Name = "reporteDeSueldosToolStripMenuItem";
             this.reporteDeSueldosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.reporteDeSueldosToolStripMenuItem.Text = "Reporte de sueldos";
+            this.reporteDeSueldosToolStripMenuItem.Click += new System.EventHandler(this.reporteDeSueldosToolStripMenuItem_Click);
             // 
             // herramientasToolStripMenuItem
             // 
@@ -239,13 +249,6 @@
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // liquidacionToolStripMenuItem
-            // 
-            this.liquidacionToolStripMenuItem.Name = "liquidacionToolStripMenuItem";
-            this.liquidacionToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.liquidacionToolStripMenuItem.Text = "Liquidacion";
-            this.liquidacionToolStripMenuItem.Click += new System.EventHandler(this.liquidacionToolStripMenuItem_Click);
             // 
             // MDINominas
             // 

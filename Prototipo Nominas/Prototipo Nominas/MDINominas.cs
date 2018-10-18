@@ -107,7 +107,7 @@ namespace Prototipo_Nominas
 
         private void ingresoDeEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            IngresoEmpleado chld = new IngresoEmpleado();
+            EmpleadoIngreso chld = new EmpleadoIngreso();
             chld.MdiParent = this;
             chld.StartPosition = FormStartPosition.CenterScreen;
             chld.Show();   
@@ -226,6 +226,30 @@ namespace Prototipo_Nominas
             pago.MdiParent = this;
             pago.StartPosition = FormStartPosition.CenterScreen;
             pago.Show();
+        }
+
+        private void reporteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cierre_de_nominas nomina = new Cierre_de_nominas();
+            nomina.MdiParent = this;
+            nomina.StartPosition = FormStartPosition.CenterScreen;
+            nomina.Show();
+        }
+
+        private void reporteDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reporte_Empleado empleado = new Reporte_Empleado();
+            empleado.MdiParent = this;
+            empleado.StartPosition = FormStartPosition.CenterScreen;
+            empleado.Show();
+        }
+
+        private void reporteDeSueldosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reporte_Sueldos sueldos = new Reporte_Sueldos();
+            sueldos.MdiParent = this;
+            sueldos.StartPosition = FormStartPosition.CenterScreen;
+            sueldos.Show();
         }
     }
 }
