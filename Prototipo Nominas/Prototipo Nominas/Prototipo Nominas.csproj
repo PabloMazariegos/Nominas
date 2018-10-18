@@ -45,53 +45,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Asignacion de area.cs">
+    <Compile Include="CapaDatos\ConexionBD.cs" />
+    <Compile Include="CapaDiseño\Procesos\Asignaciones\Asig- Areas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Asignacion de area.Designer.cs">
-      <DependentUpon>Asignacion de area.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Procesos\Asignaciones\Asig- Areas.Designer.cs">
+      <DependentUpon>Asig- Areas.cs</DependentUpon>
     </Compile>
-    <Compile Include="CambioServer.cs">
+    <Compile Include="CapaDiseño\Herramientas\Her- CambioServidor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CambioServer.Designer.cs">
-      <DependentUpon>CambioServer.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Herramientas\Her- CambioServidor.Designer.cs">
+      <DependentUpon>Her- CambioServidor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cierre de nominas.cs">
+    <Compile Include="CapaDiseño\Reportes\Rep-CierreNominas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cierre de nominas.Designer.cs">
-      <DependentUpon>Cierre de nominas.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Reportes\Rep-CierreNominas.Designer.cs">
+      <DependentUpon>Rep-CierreNominas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Comisiones.cs">
+    <Compile Include="CapaDiseño\Catalogos\Cat-Comisiones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Comisiones.Designer.cs">
-      <DependentUpon>Comisiones.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Catalogos\Cat-Comisiones.Designer.cs">
+      <DependentUpon>Cat-Comisiones.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmpleadoIngreso.cs">
+    <Compile Include="CapaDiseño\Catalogos\Cat-Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmpleadoIngreso.Designer.cs">
-      <DependentUpon>EmpleadoIngreso.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Catalogos\Cat-Empleados.Designer.cs">
+      <DependentUpon>Cat-Empleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="IngresoDeducciones.cs">
+    <Compile Include="CapaDiseño\Catalogos\Cat-Deducciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IngresoDeducciones.Designer.cs">
-      <DependentUpon>IngresoDeducciones.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Catalogos\Cat-Deducciones.Designer.cs">
+      <DependentUpon>Cat-Deducciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="IngresoPago.cs">
+    <Compile Include="CapaDiseño\Catalogos\Cat-Pagos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IngresoPago.Designer.cs">
-      <DependentUpon>IngresoPago.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Catalogos\Cat-Pagos.Designer.cs">
+      <DependentUpon>Cat-Pagos.cs</DependentUpon>
     </Compile>
-    <Compile Include="IngresoPrestacionescs.cs">
+    <Compile Include="CapaDiseño\Catalogos\Cat-Prestaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IngresoPrestacionescs.Designer.cs">
-      <DependentUpon>IngresoPrestacionescs.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Catalogos\Cat-Prestaciones.Designer.cs">
+      <DependentUpon>Cat-Prestaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -99,23 +100,23 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="mantenimientoAreas.cs">
+    <Compile Include="CapaDiseño\Procesos\Mantenimientos\Man-Areas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mantenimientoAreas.Designer.cs">
-      <DependentUpon>mantenimientoAreas.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Procesos\Mantenimientos\Man-Areas.Designer.cs">
+      <DependentUpon>Man-Areas.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenimientoConceptosR.cs">
+    <Compile Include="CapaDiseño\Procesos\Mantenimientos\Man-ConceptosR.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MantenimientoConceptosR.Designer.cs">
-      <DependentUpon>MantenimientoConceptosR.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Procesos\Mantenimientos\Man-ConceptosR.Designer.cs">
+      <DependentUpon>Man-ConceptosR.cs</DependentUpon>
     </Compile>
-    <Compile Include="mantenimientoEmpleado.cs">
+    <Compile Include="CapaDiseño\Procesos\Mantenimientos\Man-Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mantenimientoEmpleado.Designer.cs">
-      <DependentUpon>mantenimientoEmpleado.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Procesos\Mantenimientos\Man-Empleados.Designer.cs">
+      <DependentUpon>Man-Empleados.cs</DependentUpon>
     </Compile>
     <Compile Include="MDINominas.cs">
       <SubType>Form</SubType>
@@ -125,53 +126,53 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reporte Empleado.cs">
+    <Compile Include="CapaDiseño\Reportes\Rep-Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reporte Empleado.Designer.cs">
-      <DependentUpon>Reporte Empleado.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Reportes\Rep-Empleados.Designer.cs">
+      <DependentUpon>Rep-Empleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reporte Sueldos.cs">
+    <Compile Include="CapaDiseño\Reportes\Rep-Sueldos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reporte Sueldos.Designer.cs">
-      <DependentUpon>Reporte Sueldos.cs</DependentUpon>
+    <Compile Include="CapaDiseño\Reportes\Rep-Sueldos.Designer.cs">
+      <DependentUpon>Rep-Sueldos.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Asignacion de area.resx">
-      <DependentUpon>Asignacion de area.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Procesos\Asignaciones\Asig- Areas.resx">
+      <DependentUpon>Asig- Areas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CambioServer.resx">
-      <DependentUpon>CambioServer.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Herramientas\Her- CambioServidor.resx">
+      <DependentUpon>Her- CambioServidor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cierre de nominas.resx">
-      <DependentUpon>Cierre de nominas.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Reportes\Rep-CierreNominas.resx">
+      <DependentUpon>Rep-CierreNominas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Comisiones.resx">
-      <DependentUpon>Comisiones.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Catalogos\Cat-Comisiones.resx">
+      <DependentUpon>Cat-Comisiones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmpleadoIngreso.resx">
-      <DependentUpon>EmpleadoIngreso.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Catalogos\Cat-Empleados.resx">
+      <DependentUpon>Cat-Empleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IngresoDeducciones.resx">
-      <DependentUpon>IngresoDeducciones.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Catalogos\Cat-Deducciones.resx">
+      <DependentUpon>Cat-Deducciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IngresoPago.resx">
-      <DependentUpon>IngresoPago.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Catalogos\Cat-Pagos.resx">
+      <DependentUpon>Cat-Pagos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IngresoPrestacionescs.resx">
-      <DependentUpon>IngresoPrestacionescs.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Catalogos\Cat-Prestaciones.resx">
+      <DependentUpon>Cat-Prestaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mantenimientoAreas.resx">
-      <DependentUpon>mantenimientoAreas.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Procesos\Mantenimientos\Man-Areas.resx">
+      <DependentUpon>Man-Areas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MantenimientoConceptosR.resx">
-      <DependentUpon>MantenimientoConceptosR.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Procesos\Mantenimientos\Man-ConceptosR.resx">
+      <DependentUpon>Man-ConceptosR.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mantenimientoEmpleado.resx">
-      <DependentUpon>mantenimientoEmpleado.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Procesos\Mantenimientos\Man-Empleados.resx">
+      <DependentUpon>Man-Empleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDINominas.resx">
       <DependentUpon>MDINominas.cs</DependentUpon>
@@ -186,11 +187,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Reporte Empleado.resx">
-      <DependentUpon>Reporte Empleado.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Reportes\Rep-Empleados.resx">
+      <DependentUpon>Rep-Empleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reporte Sueldos.resx">
-      <DependentUpon>Reporte Sueldos.cs</DependentUpon>
+    <EmbeddedResource Include="CapaDiseño\Reportes\Rep-Sueldos.resx">
+      <DependentUpon>Rep-Sueldos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -206,7 +207,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="imagenes\user.png" />
+    <None Include="CapaDiseño\Imagenes\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CapaDiseño\Procesos\Liquidacion\" />
+    <Folder Include="CapaLogica\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

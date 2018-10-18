@@ -38,6 +38,7 @@
             this.catalogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoDeEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoPrestacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoDeEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,6 +54,13 @@
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambioDeServidorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoDePuestosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignacionDePuestosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignacionDeAreasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nominasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresoDeduccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comisionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresoPagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -116,7 +124,12 @@
             // 
             this.catalogosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresoDeEmpleadoToolStripMenuItem,
-            this.ingresoPrestacionesToolStripMenuItem});
+            this.ingresoPrestacionesToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.ingresoDeduccionesToolStripMenuItem,
+            this.ingresoPagoToolStripMenuItem,
+            this.comisionesToolStripMenuItem,
+            this.nominasToolStripMenuItem});
             this.catalogosToolStripMenuItem.Name = "catalogosToolStripMenuItem";
             this.catalogosToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.catalogosToolStripMenuItem.Text = "Catalogos";
@@ -135,6 +148,12 @@
             this.ingresoPrestacionesToolStripMenuItem.Text = "Ingreso Prestaciones";
             this.ingresoPrestacionesToolStripMenuItem.Click += new System.EventHandler(this.ingresoPrestacionesToolStripMenuItem_Click);
             // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(185, 22);
+            this.toolStripMenuItem2.Text = "Ingreso de Areas";
+            // 
             // procesosToolStripMenuItem
             // 
             this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -150,7 +169,8 @@
             this.mantenimientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mantenimientoDeEmpleadoToolStripMenuItem,
             this.mantenimientoDeConceptosRetributivosToolStripMenuItem,
-            this.mantenimientoDeAreasToolStripMenuItem});
+            this.mantenimientoDeAreasToolStripMenuItem,
+            this.mantenimientoDePuestosToolStripMenuItem});
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
             this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
@@ -179,7 +199,9 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.asignacionDeConceptosRetributivosToolStripMenuItem});
+            this.asignacionDeConceptosRetributivosToolStripMenuItem,
+            this.asignacionDePuestosToolStripMenuItem,
+            this.asignacionDeAreasToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
             this.toolStripMenuItem1.Text = "Asignaciones";
@@ -250,6 +272,48 @@
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
+            // mantenimientoDePuestosToolStripMenuItem
+            // 
+            this.mantenimientoDePuestosToolStripMenuItem.Name = "mantenimientoDePuestosToolStripMenuItem";
+            this.mantenimientoDePuestosToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.mantenimientoDePuestosToolStripMenuItem.Text = "Mantenimiento de puestos";
+            // 
+            // asignacionDePuestosToolStripMenuItem
+            // 
+            this.asignacionDePuestosToolStripMenuItem.Name = "asignacionDePuestosToolStripMenuItem";
+            this.asignacionDePuestosToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
+            this.asignacionDePuestosToolStripMenuItem.Text = "Asignacion de puestos";
+            // 
+            // asignacionDeAreasToolStripMenuItem
+            // 
+            this.asignacionDeAreasToolStripMenuItem.Name = "asignacionDeAreasToolStripMenuItem";
+            this.asignacionDeAreasToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
+            this.asignacionDeAreasToolStripMenuItem.Text = "Asignacion de areas";
+            // 
+            // nominasToolStripMenuItem
+            // 
+            this.nominasToolStripMenuItem.Name = "nominasToolStripMenuItem";
+            this.nominasToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.nominasToolStripMenuItem.Text = "Nominas";
+            // 
+            // ingresoDeduccionesToolStripMenuItem
+            // 
+            this.ingresoDeduccionesToolStripMenuItem.Name = "ingresoDeduccionesToolStripMenuItem";
+            this.ingresoDeduccionesToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.ingresoDeduccionesToolStripMenuItem.Text = "Ingreso Deducciones";
+            // 
+            // comisionesToolStripMenuItem
+            // 
+            this.comisionesToolStripMenuItem.Name = "comisionesToolStripMenuItem";
+            this.comisionesToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.comisionesToolStripMenuItem.Text = "Comisiones";
+            // 
+            // ingresoPagoToolStripMenuItem
+            // 
+            this.ingresoPagoToolStripMenuItem.Name = "ingresoPagoToolStripMenuItem";
+            this.ingresoPagoToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.ingresoPagoToolStripMenuItem.Text = "Ingreso Pago";
+            // 
             // MDINominas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -300,6 +364,14 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem asignacionDeConceptosRetributivosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem liquidacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoDePuestosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nominasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignacionDePuestosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignacionDeAreasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresoDeduccionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresoPagoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem comisionesToolStripMenuItem;
     }
 }
 
