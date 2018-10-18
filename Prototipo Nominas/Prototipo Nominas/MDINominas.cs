@@ -222,10 +222,7 @@ namespace Prototipo_Nominas
 
         private void liquidacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Liquidacion pago = new Liquidacion();
-            pago.MdiParent = this;
-            pago.StartPosition = FormStartPosition.CenterScreen;
-            pago.Show();
+            
         }
 
         private void reporteToolStripMenuItem_Click(object sender, EventArgs e)
