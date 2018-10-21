@@ -1,0 +1,4 @@
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaDatos\obj\Debug\CapaDatos.pdb
