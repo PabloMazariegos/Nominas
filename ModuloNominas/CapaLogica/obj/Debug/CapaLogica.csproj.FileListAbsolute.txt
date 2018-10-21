@@ -1,5 +1,0 @@
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaLogica\bin\Debug\CapaLogica.dll
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaLogica\bin\Debug\CapaLogica.pdb
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.csprojResolveAssemblyReference.cache
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.dll
-C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.pdb
