@@ -19,3 +19,23 @@ C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaDiseño\o
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepEmpleados.resources
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepCierre.resources
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.HerCambioServidor.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDiseño.exe
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDiseño.pdb
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManEmpleados.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManConceptosR.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManAreas.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.AsigAreas.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatPrestaciones.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatPagos.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatEmpleados.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatDeducciones.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatComisiones.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.HerCambioServidor.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.MDI.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Properties.Resources.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepSueldos.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepEmpleados.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepCierre.resources
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.csproj.GenerateResource.Cache
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.exe
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.pdb

@@ -3,3 +3,8 @@ C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaLogica\bi
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.csprojResolveAssemblyReference.cache
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\Pablo\Documents\Visual Studio 2015\Projects\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.csprojResolveAssemblyReference.cache
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.pdb
