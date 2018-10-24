@@ -26,5 +26,15 @@ namespace CapaDiseño
         {
 
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

@@ -6,3 +6,7 @@ C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDatos\bin\Debug\C
 C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDatos\bin\Debug\CapaDatos.pdb
 C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDatos\obj\Debug\CapaDatos.pdb

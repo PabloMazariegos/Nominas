@@ -8,3 +8,8 @@ C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaLogica\bin\Debug\
 C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.csprojResolveAssemblyReference.cache
 C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\srjefers\Documents\analisis\Nominas\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.csprojResolveAssemblyReference.cache
+C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaLogica\obj\Debug\CapaLogica.pdb

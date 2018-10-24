@@ -31,5 +31,15 @@ namespace CapaDiseño
             /*Matches para validar el dato ingresado en ID */
             /*Filtra los datos segun los campos sean llenados*/
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

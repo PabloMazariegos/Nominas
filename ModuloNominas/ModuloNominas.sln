@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{8E26BE19-60E9-44B1-AAAD-1A9AAECF6174}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatosNominas", "CapaDatos\CapaDatosNominas.csproj", "{8E26BE19-60E9-44B1-AAAD-1A9AAECF6174}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaLogica", "CapaLogica\CapaLogica.csproj", "{02066E39-BFD1-46F9-B7C3-5807648D8572}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaLogicaNominas", "CapaLogica\CapaLogicaNominas.csproj", "{02066E39-BFD1-46F9-B7C3-5807648D8572}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDiseño", "CapaDiseño\CapaDiseño.csproj", "{2F1EA195-02FB-4A59-8A67-6DA91E62EAF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDiseñoNominas", "CapaDiseño\CapaDiseñoNominas.csproj", "{2F1EA195-02FB-4A59-8A67-6DA91E62EAF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

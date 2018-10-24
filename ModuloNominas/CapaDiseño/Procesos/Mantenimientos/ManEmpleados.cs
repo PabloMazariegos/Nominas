@@ -15,6 +15,17 @@ namespace CapaDiseño
         public ManEmpleados()
         {
             InitializeComponent();
+            navegador1.ingresarTabla("empleados_view");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

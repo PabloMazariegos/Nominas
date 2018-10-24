@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaDiseño.Procesos.Mantenimientos;
+using CapaDiseño.Procesos.Liquidacion;
 
 namespace CapaDiseño
 {
@@ -33,14 +35,9 @@ namespace CapaDiseño
                     Console.Write(ex);
                 }
             }
-        }
-
-        private void nuevoEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CatEmpleados chld = new CatEmpleados();
-            chld.MdiParent = this;
-            chld.StartPosition = FormStartPosition.CenterScreen;
-            chld.Show();
+            timer1.Start();
+            lbl_fecha.Text = DateTime.Now.ToLongDateString();
+            lbl_hora.Text = DateTime.Now.ToLongTimeString();
         }
 
         private void prestacionesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -91,6 +88,14 @@ namespace CapaDiseño
             chld.Show();
         }
 
+        private void puestosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManPuestos chld = new ManPuestos();
+            chld.MdiParent = this;
+            chld.StartPosition = FormStartPosition.CenterScreen;
+            chld.Show();
+        }
+
         private void conceptosRetributivosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ManConceptosR chld = new ManConceptosR();
@@ -102,6 +107,24 @@ namespace CapaDiseño
         private void areasToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             AsigAreas chld = new AsigAreas();
+            chld.MdiParent = this;
+            chld.StartPosition = FormStartPosition.CenterScreen;
+            chld.Show();
+        }
+
+        private void puestosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void conceptosRetributivosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void liquidacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 chld = new Form1();
             chld.MdiParent = this;
             chld.StartPosition = FormStartPosition.CenterScreen;
             chld.Show();
@@ -139,12 +162,28 @@ namespace CapaDiseño
             chld.Show();
         }
 
-        private void cerrarAplicacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void areasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (Form chld in this.MdiChildren)
-            {
-                chld.Close();
-            }
+            CatAreas chld = new CatAreas();
+            chld.MdiParent = this;
+            chld.StartPosition = FormStartPosition.CenterScreen;
+            chld.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_hora.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
         }
     }
 }
