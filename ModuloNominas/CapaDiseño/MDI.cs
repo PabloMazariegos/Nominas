@@ -185,5 +185,14 @@ namespace CapaDiseño
             lbl_hora.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
         }
+
+        private void polizasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Polizas.Polizas chld = new Polizas.Polizas();
+            chld.MdiParent = this;
+            chld.StartPosition = FormStartPosition.CenterScreen;
+            chld.Show();
+        }
     }
 }
