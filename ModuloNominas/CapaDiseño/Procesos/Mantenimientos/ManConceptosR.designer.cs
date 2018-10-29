@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dt_ConceptosRetributivos = new System.Windows.Forms.DataGridView();
             this.navegador1 = new CapaDiseno.Navegador();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -54,14 +54,14 @@
             // dt_ConceptosRetributivos
             // 
             this.dt_ConceptosRetributivos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dt_ConceptosRetributivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dt_ConceptosRetributivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dt_ConceptosRetributivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_ConceptosRetributivos.Location = new System.Drawing.Point(27, 332);
             this.dt_ConceptosRetributivos.Name = "dt_ConceptosRetributivos";
@@ -90,6 +90,7 @@
             this.textBox6.Size = new System.Drawing.Size(161, 26);
             this.textBox6.TabIndex = 25;
             this.textBox6.Tag = "6";
+            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_KeyPress);
             // 
             // label6
             // 
@@ -109,6 +110,7 @@
             this.textBox5.Size = new System.Drawing.Size(161, 26);
             this.textBox5.TabIndex = 23;
             this.textBox5.Tag = "5";
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // label5
             // 
@@ -128,6 +130,7 @@
             this.textBox4.Size = new System.Drawing.Size(161, 26);
             this.textBox4.TabIndex = 21;
             this.textBox4.Tag = "4";
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
             // label4
             // 
@@ -147,6 +150,7 @@
             this.textBox3.Size = new System.Drawing.Size(180, 26);
             this.textBox3.TabIndex = 19;
             this.textBox3.Tag = "3";
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // label3
             // 
@@ -166,6 +170,7 @@
             this.textBox2.Size = new System.Drawing.Size(180, 26);
             this.textBox2.TabIndex = 17;
             this.textBox2.Tag = "2";
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // textBox1
             // 
@@ -175,6 +180,7 @@
             this.textBox1.Size = new System.Drawing.Size(180, 26);
             this.textBox1.TabIndex = 16;
             this.textBox1.Tag = "1";
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label2
             // 

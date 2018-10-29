@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dt_Empleados = new System.Windows.Forms.DataGridView();
             this.navegador1 = new CapaDiseno.Navegador();
             this.dt_Areas = new System.Windows.Forms.DataGridView();
@@ -64,14 +64,14 @@
             // dt_Empleados
             // 
             this.dt_Empleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dt_Empleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dt_Empleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dt_Empleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_Empleados.Location = new System.Drawing.Point(26, 349);
             this.dt_Empleados.Name = "dt_Empleados";
@@ -170,6 +170,7 @@
             this.textBox1.Size = new System.Drawing.Size(151, 26);
             this.textBox1.TabIndex = 3;
             this.textBox1.Tag = "1";
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // textBox2
             // 
@@ -179,6 +180,7 @@
             this.textBox2.Size = new System.Drawing.Size(151, 26);
             this.textBox2.TabIndex = 5;
             this.textBox2.Tag = "2";
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // label2
             // 
@@ -198,6 +200,7 @@
             this.textBox3.Size = new System.Drawing.Size(151, 26);
             this.textBox3.TabIndex = 7;
             this.textBox3.Tag = "3";
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // label3
             // 
@@ -217,6 +220,7 @@
             this.textBox4.Size = new System.Drawing.Size(40, 26);
             this.textBox4.TabIndex = 9;
             this.textBox4.Tag = "4";
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
             // label4
             // 
@@ -246,6 +250,7 @@
             this.textBox5.Size = new System.Drawing.Size(151, 26);
             this.textBox5.TabIndex = 13;
             this.textBox5.Tag = "6";
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // label6
             // 
@@ -265,6 +270,7 @@
             this.textBox6.Size = new System.Drawing.Size(151, 26);
             this.textBox6.TabIndex = 15;
             this.textBox6.Tag = "7";
+            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_KeyPress);
             // 
             // label10
             // 
@@ -284,6 +290,7 @@
             this.textBox10.Size = new System.Drawing.Size(41, 26);
             this.textBox10.TabIndex = 16;
             this.textBox10.Tag = "5";
+            this.textBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox10_KeyPress);
             // 
             // panel2
             // 
