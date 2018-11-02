@@ -165,6 +165,8 @@ namespace CapaDiseño.Procesos.Liquidacion
                         salariototal = (salariomes * dias) + percibe;
                         totalDevengado = salariototal.ToString();
                         textBox7.Text = totalDevengado;
+                        totalpercibe = salariototal - 369;
+                        textBox9.Text = totalpercibe.ToString();
                         break;
                     case 2:
                         salariomes = sal / 31;
@@ -177,12 +179,16 @@ namespace CapaDiseño.Procesos.Liquidacion
                         salariototal = (salariomes * dias) + percibe;
                         totalDevengado = salariototal.ToString();
                         textBox7.Text = totalDevengado;
+                        totalpercibe = salariototal - 369;
+                        textBox9.Text = totalpercibe.ToString();
                         break;
                     case 4:
                         salariomes = sal / 31;
                         salariototal = (salariomes * dias) + percibe;
                         totalDevengado = salariototal.ToString();
                         textBox7.Text = totalDevengado;
+                        totalpercibe = salariototal - 369;
+                        textBox9.Text = totalpercibe.ToString();
                         break;
                     case 5:
                         salariomes = sal / 30;
@@ -195,6 +201,8 @@ namespace CapaDiseño.Procesos.Liquidacion
                         salariototal = (salariomes * dias) + percibe;
                         totalDevengado = salariototal.ToString();
                         textBox7.Text = totalDevengado;
+                        totalpercibe = salariototal - 369;
+                        textBox9.Text = totalpercibe.ToString();
                         break;
                     case 7:
                         salariomes = sal / 30;
@@ -213,18 +221,24 @@ namespace CapaDiseño.Procesos.Liquidacion
                         salariototal = (salariomes * dias) + percibe;
                         totalDevengado = salariototal.ToString();
                         textBox7.Text = totalDevengado;
+                        totalpercibe = salariototal - 369;
+                        textBox9.Text = totalpercibe.ToString();
                         break;
                     case 10:
                         salariomes = sal / 31;
                         salariototal = (salariomes * dias) + percibe;
                         totalDevengado = salariototal.ToString();
                         textBox7.Text = totalDevengado;
+                        totalpercibe = salariototal - 369;
+                        textBox9.Text = totalpercibe.ToString();
                         break;
                     case 11:
                         salariomes = sal / 30;
                         salariototal = (salariomes * dias) + percibe;
                         totalDevengado = salariototal.ToString();
                         textBox7.Text = totalDevengado;
+                        totalpercibe = salariototal - 369;
+                        textBox9.Text = totalpercibe.ToString();
                         break;
                  }
               }
