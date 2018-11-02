@@ -45,8 +45,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -54,6 +52,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -139,7 +139,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 63);
             this.button2.TabIndex = 24;
-            this.button2.Text = "Modificar";
+            this.button2.Text = "Calcular";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -209,10 +209,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.textBox9);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.textBox7);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBox6);
@@ -230,8 +230,9 @@
             // textBox9
             // 
             this.textBox9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox9.Location = new System.Drawing.Point(196, 141);
+            this.textBox9.Location = new System.Drawing.Point(461, 150);
             this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(82, 27);
             this.textBox9.TabIndex = 32;
             // 
@@ -239,38 +240,19 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(38, 144);
+            this.label11.Location = new System.Drawing.Point(303, 153);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(126, 19);
             this.label11.TabIndex = 31;
             this.label11.Text = "Total a Percibir:";
             // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox8.Location = new System.Drawing.Point(548, 90);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(204, 27);
-            this.textBox8.TabIndex = 30;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(297, 95);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(245, 19);
-            this.label10.TabIndex = 29;
-            this.label10.Text = "Total Deducciones Trabajador:";
-            // 
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox7.Location = new System.Drawing.Point(196, 87);
+            this.textBox7.Location = new System.Drawing.Point(222, 87);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(82, 27);
+            this.textBox7.Size = new System.Drawing.Size(139, 27);
             this.textBox7.TabIndex = 28;
             // 
             // label9
@@ -286,7 +268,7 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox6.Location = new System.Drawing.Point(548, 30);
+            this.textBox6.Location = new System.Drawing.Point(712, 90);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(99, 27);
             this.textBox6.TabIndex = 26;
@@ -295,7 +277,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(324, 33);
+            this.label8.Location = new System.Drawing.Point(488, 93);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(188, 19);
             this.label8.TabIndex = 25;
@@ -316,9 +298,9 @@
             "Septiembre",
             "Noviembre",
             "Diciembre"});
-            this.comboBox1.Location = new System.Drawing.Point(196, 33);
+            this.comboBox1.Location = new System.Drawing.Point(712, 44);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(82, 27);
+            this.comboBox1.Size = new System.Drawing.Size(99, 27);
             this.comboBox1.TabIndex = 24;
             this.comboBox1.Text = "Enero";
             // 
@@ -326,7 +308,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(38, 36);
+            this.label7.Location = new System.Drawing.Point(488, 47);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 19);
             this.label7.TabIndex = 23;
@@ -343,6 +325,24 @@
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.textBox5.Location = new System.Drawing.Point(222, 41);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(139, 27);
+            this.textBox5.TabIndex = 34;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(38, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 19);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Año:";
             // 
             // Form1
             // 
@@ -393,8 +393,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox6;
@@ -402,5 +400,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label5;
     }
 }
