@@ -7,15 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Odbc;
+using CapaDatosNominas;
 
-namespace CapaDiseño.Procesos.Mantenimientos
+namespace CapaDiseño
 {
     public partial class ManPuestos : Form
     {
+        CapaDatosNominas.ConexionCapaDatos cnx = new ConexionCapaDatos();
         public ManPuestos()
         {
             InitializeComponent();
-            navegador1.ingresarTabla("puestos_view");
+            navegador1.ingresarTabla("puestosVW");
+            OdbcDataAdapter dta = new OdbcDataAdapter("SELECT tbl_areas.ID_Area, tbl_areas.Nombre FROM tbl_areas", cnx.cnxOpen());
+            DataSet dst = new DataSet();
+            dta.Fill(dst, "tbl_areas");
+            cbx_areas.DisplayMember = "id_area" ;
+            cbx_areas.ValueMember = "Nombre";
+            cbx_areas.DataSource = dst.Tables["tbl_areas"];
+            
+           
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -28,7 +40,20 @@ namespace CapaDiseño.Procesos.Mantenimientos
             this.Close();
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+
+
+        private void navegador1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cbx_areas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String value = System.Convert.ToString(cbx_areas.SelectedValue);
+            lbl_nombreArea.Text = value;
+        }
+
+        private void txt_codArea_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
@@ -36,17 +61,19 @@ namespace CapaDiseño.Procesos.Mantenimientos
             }
         }
 
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+
+
+        private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
             {
                 e.Handled = true;
             }
         }
 
-        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        private void txt_descripcion_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
             {
                 e.Handled = true;
             }

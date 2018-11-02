@@ -15,7 +15,7 @@ namespace CapaDiseño
         public AsigAreas()
         {
             InitializeComponent();
-            dataGridView1.Rows.Add("001", "IGSS", "Abono", "0.1067", "impuesto", "mensual", true);
+            
         }
 
         private void Asignacion_de_area_Load(object sender, EventArgs e)
