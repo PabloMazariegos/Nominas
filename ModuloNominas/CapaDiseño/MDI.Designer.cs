@@ -59,6 +59,7 @@
             this.puestosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.conceptosRetributivosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.liquidacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.polizasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nominasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,7 +76,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.polizasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -176,7 +176,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(3, 1);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(494, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(402, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -348,8 +348,15 @@
             // 
             this.liquidacionToolStripMenuItem.Name = "liquidacionToolStripMenuItem";
             this.liquidacionToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.liquidacionToolStripMenuItem.Text = "Liquidacion";
+            this.liquidacionToolStripMenuItem.Text = "Percepciones";
             this.liquidacionToolStripMenuItem.Click += new System.EventHandler(this.liquidacionToolStripMenuItem_Click);
+            // 
+            // polizasToolStripMenuItem
+            // 
+            this.polizasToolStripMenuItem.Name = "polizasToolStripMenuItem";
+            this.polizasToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.polizasToolStripMenuItem.Text = "Polizas";
+            this.polizasToolStripMenuItem.Click += new System.EventHandler(this.polizasToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -488,13 +495,6 @@
             this.label1.Size = new System.Drawing.Size(62, 18);
             this.label1.TabIndex = 33;
             this.label1.Text = "Fecha: ";
-            // 
-            // polizasToolStripMenuItem
-            // 
-            this.polizasToolStripMenuItem.Name = "polizasToolStripMenuItem";
-            this.polizasToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.polizasToolStripMenuItem.Text = "Polizas";
-            this.polizasToolStripMenuItem.Click += new System.EventHandler(this.polizasToolStripMenuItem_Click);
             // 
             // MDI
             // 
