@@ -7,18 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.Odbc;
+
 
 namespace CapaDiseño
 {
-    public partial class ManAreas : Form
+    public partial class ManContratos : Form
     {
-        public ManAreas()
+        public ManContratos()
         {
             InitializeComponent();
-            navegador1.ingresarTabla("AreasVW");
-            
-            
+            navegador1.ingresarTabla("contratosVW");
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -38,7 +36,7 @@ namespace CapaDiseño
             
         }
 
-        private void txt_codArea_KeyPress(object sender, KeyPressEventArgs e)
+        private void txt_codigo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
@@ -54,7 +52,7 @@ namespace CapaDiseño
             }
         }
 
-        private void txt_descripcion_KeyPress(object sender, KeyPressEventArgs e)
+        private void txt_descrip_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
             {
@@ -62,9 +60,12 @@ namespace CapaDiseño
             }
         }
 
-        private void txt_codArea_HelpRequested(object sender, HelpEventArgs hlpevent)
+        private void txt_importe_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Help.ShowHelp(this, @"C:/ayuda/Mantenimientos.chm", "MantenimientoAreas.html#codigo");
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

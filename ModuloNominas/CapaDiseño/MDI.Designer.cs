@@ -53,12 +53,12 @@
             this.empleadosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.areasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.puestosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contratosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conceptosRetributivosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.asignacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.areasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.puestosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.conceptosRetributivosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.liquidacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.polizasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nominasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,7 +75,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.polizasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -219,7 +218,7 @@
             this.deduccionesToolStripMenuItem,
             this.comisionesToolStripMenuItem});
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             // 
             // prestacionesToolStripMenuItem
@@ -253,14 +252,14 @@
             // areasToolStripMenuItem
             // 
             this.areasToolStripMenuItem.Name = "areasToolStripMenuItem";
-            this.areasToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.areasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.areasToolStripMenuItem.Text = "Areas";
             this.areasToolStripMenuItem.Click += new System.EventHandler(this.areasToolStripMenuItem_Click);
             // 
             // conceptosRetributivosToolStripMenuItem
             // 
             this.conceptosRetributivosToolStripMenuItem.Name = "conceptosRetributivosToolStripMenuItem";
-            this.conceptosRetributivosToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.conceptosRetributivosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.conceptosRetributivosToolStripMenuItem.Text = "Nominas";
             // 
             // procesosToolStripMenuItem
@@ -280,6 +279,7 @@
             this.empleadosToolStripMenuItem1,
             this.areasToolStripMenuItem1,
             this.puestosToolStripMenuItem,
+            this.contratosToolStripMenuItem,
             this.conceptosRetributivosToolStripMenuItem1});
             this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
             this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
@@ -306,6 +306,13 @@
             this.puestosToolStripMenuItem.Text = "Puestos";
             this.puestosToolStripMenuItem.Click += new System.EventHandler(this.puestosToolStripMenuItem_Click);
             // 
+            // contratosToolStripMenuItem
+            // 
+            this.contratosToolStripMenuItem.Name = "contratosToolStripMenuItem";
+            this.contratosToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.contratosToolStripMenuItem.Text = "Contratos";
+            this.contratosToolStripMenuItem.Click += new System.EventHandler(this.contratosToolStripMenuItem_Click);
+            // 
             // conceptosRetributivosToolStripMenuItem1
             // 
             this.conceptosRetributivosToolStripMenuItem1.Name = "conceptosRetributivosToolStripMenuItem1";
@@ -316,26 +323,10 @@
             // asignacionesToolStripMenuItem
             // 
             this.asignacionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.areasToolStripMenuItem2,
-            this.puestosToolStripMenuItem1,
             this.conceptosRetributivosToolStripMenuItem2});
             this.asignacionesToolStripMenuItem.Name = "asignacionesToolStripMenuItem";
             this.asignacionesToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.asignacionesToolStripMenuItem.Text = "Asignaciones";
-            // 
-            // areasToolStripMenuItem2
-            // 
-            this.areasToolStripMenuItem2.Name = "areasToolStripMenuItem2";
-            this.areasToolStripMenuItem2.Size = new System.Drawing.Size(197, 22);
-            this.areasToolStripMenuItem2.Text = "Areas";
-            this.areasToolStripMenuItem2.Click += new System.EventHandler(this.areasToolStripMenuItem2_Click);
-            // 
-            // puestosToolStripMenuItem1
-            // 
-            this.puestosToolStripMenuItem1.Name = "puestosToolStripMenuItem1";
-            this.puestosToolStripMenuItem1.Size = new System.Drawing.Size(197, 22);
-            this.puestosToolStripMenuItem1.Text = "Puestos";
-            this.puestosToolStripMenuItem1.Click += new System.EventHandler(this.puestosToolStripMenuItem1_Click);
             // 
             // conceptosRetributivosToolStripMenuItem2
             // 
@@ -350,6 +341,13 @@
             this.liquidacionToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.liquidacionToolStripMenuItem.Text = "Liquidacion";
             this.liquidacionToolStripMenuItem.Click += new System.EventHandler(this.liquidacionToolStripMenuItem_Click);
+            // 
+            // polizasToolStripMenuItem
+            // 
+            this.polizasToolStripMenuItem.Name = "polizasToolStripMenuItem";
+            this.polizasToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.polizasToolStripMenuItem.Text = "Polizas";
+            this.polizasToolStripMenuItem.Click += new System.EventHandler(this.polizasToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -489,13 +487,6 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "Fecha: ";
             // 
-            // polizasToolStripMenuItem
-            // 
-            this.polizasToolStripMenuItem.Name = "polizasToolStripMenuItem";
-            this.polizasToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.polizasToolStripMenuItem.Text = "Polizas";
-            this.polizasToolStripMenuItem.Click += new System.EventHandler(this.polizasToolStripMenuItem_Click);
-            // 
             // MDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -560,8 +551,6 @@
         private System.Windows.Forms.ToolStripMenuItem puestosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem conceptosRetributivosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem asignacionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem areasToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem puestosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem conceptosRetributivosToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem liquidacionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
@@ -583,6 +572,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem polizasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contratosToolStripMenuItem;
     }
 }
 
