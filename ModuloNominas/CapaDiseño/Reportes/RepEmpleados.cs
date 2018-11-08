@@ -36,5 +36,21 @@ namespace CapaDiseño
         {
 
         }
+
+     
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void panel2_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "C://ayuda_cierre de nominas.chm");
+        }
     }
 }

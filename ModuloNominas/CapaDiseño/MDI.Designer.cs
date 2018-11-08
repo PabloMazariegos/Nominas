@@ -62,7 +62,6 @@
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nominasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sueldosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambioDeServidorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -218,7 +217,7 @@
             this.deduccionesToolStripMenuItem,
             this.comisionesToolStripMenuItem});
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             // 
             // prestacionesToolStripMenuItem
@@ -252,14 +251,14 @@
             // areasToolStripMenuItem
             // 
             this.areasToolStripMenuItem.Name = "areasToolStripMenuItem";
-            this.areasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.areasToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.areasToolStripMenuItem.Text = "Areas";
             this.areasToolStripMenuItem.Click += new System.EventHandler(this.areasToolStripMenuItem_Click);
             // 
             // conceptosRetributivosToolStripMenuItem
             // 
             this.conceptosRetributivosToolStripMenuItem.Name = "conceptosRetributivosToolStripMenuItem";
-            this.conceptosRetributivosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.conceptosRetributivosToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.conceptosRetributivosToolStripMenuItem.Text = "Nominas";
             // 
             // procesosToolStripMenuItem
@@ -353,8 +352,7 @@
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nominasToolStripMenuItem,
-            this.empleadosToolStripMenuItem2,
-            this.sueldosToolStripMenuItem});
+            this.empleadosToolStripMenuItem2});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
@@ -362,23 +360,16 @@
             // nominasToolStripMenuItem
             // 
             this.nominasToolStripMenuItem.Name = "nominasToolStripMenuItem";
-            this.nominasToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.nominasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nominasToolStripMenuItem.Text = "Nominas";
             this.nominasToolStripMenuItem.Click += new System.EventHandler(this.nominasToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem2
             // 
             this.empleadosToolStripMenuItem2.Name = "empleadosToolStripMenuItem2";
-            this.empleadosToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
+            this.empleadosToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.empleadosToolStripMenuItem2.Text = "Empleados";
             this.empleadosToolStripMenuItem2.Click += new System.EventHandler(this.empleadosToolStripMenuItem2_Click);
-            // 
-            // sueldosToolStripMenuItem
-            // 
-            this.sueldosToolStripMenuItem.Name = "sueldosToolStripMenuItem";
-            this.sueldosToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.sueldosToolStripMenuItem.Text = "Sueldos";
-            this.sueldosToolStripMenuItem.Click += new System.EventHandler(this.sueldosToolStripMenuItem_Click);
             // 
             // herramientasToolStripMenuItem
             // 
@@ -556,7 +547,6 @@
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nominasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem sueldosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cambioDeServidorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;

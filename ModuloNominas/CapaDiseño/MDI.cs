@@ -148,10 +148,7 @@ namespace CapaDiseño
 
         private void sueldosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RepSueldos chld = new RepSueldos();
-            chld.MdiParent = this;
-            chld.StartPosition = FormStartPosition.CenterScreen;
-            chld.Show();
+           
         }
 
         private void cambioDeServidorToolStripMenuItem_Click(object sender, EventArgs e)

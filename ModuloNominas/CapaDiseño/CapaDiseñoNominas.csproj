@@ -154,12 +154,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reportes\RepSueldos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reportes\RepSueldos.designer.cs">
-      <DependentUpon>RepSueldos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reportes\RepEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,9 +215,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\RepSueldos.resx">
-      <DependentUpon>RepSueldos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\RepEmpleados.resx">
       <DependentUpon>RepEmpleados.cs</DependentUpon>
