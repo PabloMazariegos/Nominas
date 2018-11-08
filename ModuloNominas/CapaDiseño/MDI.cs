@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaDiseño.Procesos.Mantenimientos;
+using CapaDiseño.Procesos;
 using CapaDiseño.Procesos.Liquidacion;
 
 namespace CapaDiseño
@@ -106,10 +106,7 @@ namespace CapaDiseño
 
         private void areasToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            AsigAreas chld = new AsigAreas();
-            chld.MdiParent = this;
-            chld.StartPosition = FormStartPosition.CenterScreen;
-            chld.Show();
+            
         }
 
         private void puestosToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -119,7 +116,10 @@ namespace CapaDiseño
 
         private void conceptosRetributivosToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            
+            AsigAreas chld = new AsigAreas();
+            chld.MdiParent = this;
+            chld.StartPosition = FormStartPosition.CenterScreen;
+            chld.Show();
         }
 
         private void liquidacionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -190,6 +190,14 @@ namespace CapaDiseño
         {
 
             Polizas.Polizas chld = new Polizas.Polizas();
+            chld.MdiParent = this;
+            chld.StartPosition = FormStartPosition.CenterScreen;
+            chld.Show();
+        }
+
+        private void contratosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManContratos chld = new ManContratos();
             chld.MdiParent = this;
             chld.StartPosition = FormStartPosition.CenterScreen;
             chld.Show();

@@ -17,7 +17,6 @@ C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\
 C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatComisiones.resources
 C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.HerCambioServidor.resources
 C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.MDI.resources
-C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Procesos.Mantenimientos.ManPuestos.resources
 C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Properties.Resources.resources
 C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepSueldos.resources
 C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepEmpleados.resources
@@ -30,3 +29,35 @@ C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\
 C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDatosNominas.pdb
 C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseñoNominas.csprojResolveAssemblyReference.cache
 C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Polizas.Polizas.resources
+C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManPuestos.resources
+C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManContratos.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\bin\Debug\CapaDiseño.exe
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\bin\Debug\CapaDiseño.pdb
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\bin\Debug\CapaDatosNominas.dll
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\bin\Debug\CapaDatos.pdb
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\bin\Debug\CapaDatosNominas.pdb
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\bin\Debug\CapaDiseno.pdb
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\bin\Debug\CapaLogica.pdb
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseñoNominas.csprojResolveAssemblyReference.cache
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatAreas.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatPrestaciones.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManContratos.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManPuestos.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Polizas.Polizas.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Procesos.Liquidacion.Form1.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManEmpleados.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManConceptosR.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManAreas.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.AsigAreas.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatPagos.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatDeducciones.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatComisiones.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.HerCambioServidor.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.MDI.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Properties.Resources.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepSueldos.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepEmpleados.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepCierre.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseñoNominas.csproj.GenerateResource.Cache
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.exe
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.pdb
