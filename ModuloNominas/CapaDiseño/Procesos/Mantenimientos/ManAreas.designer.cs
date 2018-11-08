@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dt_Areas = new System.Windows.Forms.DataGridView();
             this.dt_ConceptosRetributivos = new System.Windows.Forms.DataGridView();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -44,10 +44,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt_codArea = new System.Windows.Forms.TextBox();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txt_descripcion = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.navegador1 = new CapaDiseno.Navegador();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -62,19 +62,19 @@
             // dt_Areas
             // 
             this.dt_Areas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dt_Areas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dt_Areas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dt_Areas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dt_Areas.Location = new System.Drawing.Point(22, 297);
+            this.dt_Areas.Location = new System.Drawing.Point(22, 258);
             this.dt_Areas.Name = "dt_Areas";
             this.dt_Areas.ReadOnly = true;
-            this.dt_Areas.Size = new System.Drawing.Size(868, 191);
+            this.dt_Areas.Size = new System.Drawing.Size(868, 298);
             this.dt_Areas.TabIndex = 6;
             // 
             // dt_ConceptosRetributivos
@@ -192,60 +192,61 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(63, 206);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(261, 139);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 18);
+            this.label7.Size = new System.Drawing.Size(49, 15);
             this.label7.TabIndex = 8;
-            this.label7.Text = "ID:";
+            this.label7.Text = "Codigo:";
             // 
-            // textBox7
+            // txt_codArea
             // 
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(90, 203);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(165, 26);
-            this.textBox7.TabIndex = 9;
-            this.textBox7.Tag = "1";
-            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
+            this.txt_codArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_codArea.Location = new System.Drawing.Point(345, 133);
+            this.txt_codArea.Name = "txt_codArea";
+            this.txt_codArea.Size = new System.Drawing.Size(43, 21);
+            this.txt_codArea.TabIndex = 9;
+            this.txt_codArea.Tag = "1";
+            this.txt_codArea.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.txt_codArea_HelpRequested);
+            this.txt_codArea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_codArea_KeyPress);
             // 
-            // textBox8
+            // txt_nombre
             // 
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(394, 203);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(165, 26);
-            this.textBox8.TabIndex = 11;
-            this.textBox8.Tag = "2";
-            this.textBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox8_KeyPress);
+            this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre.Location = new System.Drawing.Point(345, 170);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(296, 21);
+            this.txt_nombre.TabIndex = 11;
+            this.txt_nombre.Tag = "2";
+            this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(316, 206);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(261, 173);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 18);
+            this.label8.Size = new System.Drawing.Size(55, 15);
             this.label8.TabIndex = 10;
             this.label8.Text = "Nombre:";
             // 
-            // textBox9
+            // txt_descripcion
             // 
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(693, 203);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(165, 26);
-            this.textBox9.TabIndex = 13;
-            this.textBox9.Tag = "3";
-            this.textBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox9_KeyPress);
+            this.txt_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_descripcion.Location = new System.Drawing.Point(345, 208);
+            this.txt_descripcion.Name = "txt_descripcion";
+            this.txt_descripcion.Size = new System.Drawing.Size(296, 21);
+            this.txt_descripcion.TabIndex = 13;
+            this.txt_descripcion.Tag = "3";
+            this.txt_descripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_descripcion_KeyPress);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(582, 206);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(261, 211);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 18);
+            this.label9.Size = new System.Drawing.Size(78, 15);
             this.label9.TabIndex = 12;
             this.label9.Text = "Descripcion: ";
             // 
@@ -254,13 +255,14 @@
             this.navegador1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.navegador1.DataGr = this.dt_Areas;
             this.navegador1.Forma = this;
-            this.navegador1.Location = new System.Drawing.Point(25, 72);
+            this.navegador1.Location = new System.Drawing.Point(33, 48);
             this.navegador1.Name = "navegador1";
             this.navegador1.Procedimiento = null;
-            this.navegador1.pubNombrechm = null;
-            this.navegador1.pubNombreHtml = null;
+            this.navegador1.pubNombrechm = "Mantenimientos.chm";
+            this.navegador1.pubNombreHtml = "areas.html";
             this.navegador1.Size = new System.Drawing.Size(857, 60);
             this.navegador1.TabIndex = 14;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // panel2
             // 
@@ -319,11 +321,11 @@
             this.ClientSize = new System.Drawing.Size(917, 661);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.navegador1);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txt_descripcion);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txt_codArea);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dt_Areas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -354,10 +356,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txt_codArea;
+        private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txt_descripcion;
         private System.Windows.Forms.Label label9;
         private CapaDiseno.Navegador navegador1;
         private System.Windows.Forms.Panel panel2;

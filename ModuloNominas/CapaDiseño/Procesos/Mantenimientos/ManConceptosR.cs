@@ -7,9 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaDatos;
-using CapaDiseno;
-using CapaLogica;
+
 
 namespace CapaDiseño
 {
@@ -18,8 +16,8 @@ namespace CapaDiseño
         public ManConceptosR()
         {
             InitializeComponent();
-            navegador1.ingresarTabla("conceptosR_view");
-           
+            navegador1.ingresarTabla("conceptosVW");
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -32,7 +30,14 @@ namespace CapaDiseño
             this.Close();
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+
+
+        private void navegador1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txt_codigo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
@@ -40,41 +45,25 @@ namespace CapaDiseño
             }
         }
 
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
             {
                 e.Handled = true;
             }
         }
 
-        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        private void txt_descrip_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
             {
                 e.Handled = true;
             }
         }
 
-        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        private void txt_importe_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar)&& !char.IsDigit(e.KeyChar) && !char.IsPunctuation(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsPunctuation(e.KeyChar))
             {
                 e.Handled = true;
             }
