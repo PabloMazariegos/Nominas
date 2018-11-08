@@ -16,8 +16,7 @@ namespace CapaDiseño
         public ManAreas()
         {
             InitializeComponent();
-            navegador1.ingresarTabla("AreasVW");
-            
+            navegador1.ingresarTabla("areas_view");
             
         }
 
@@ -29,42 +28,6 @@ namespace CapaDiseño
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-
-
-        private void navegador1_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txt_codArea_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_descripcion_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_codArea_HelpRequested(object sender, HelpEventArgs hlpevent)
-        {
-            Help.ShowHelp(this, @"C:/ayuda/Mantenimientos.chm", "MantenimientoAreas.html#codigo");
         }
     }
 }

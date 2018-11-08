@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CapaDatos;
+using CapaDiseno;
+using CapaLogica;
 
 namespace CapaDiseño
 {
@@ -16,8 +18,8 @@ namespace CapaDiseño
         public ManConceptosR()
         {
             InitializeComponent();
-            navegador1.ingresarTabla("empleadosVW");
-            
+            navegador1.ingresarTabla("conceptosR_view");
+           
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -28,45 +30,6 @@ namespace CapaDiseño
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-
-
-        private void navegador1_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txt_codigo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_descrip_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_importe_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsPunctuation(e.KeyChar))
-            {
-                e.Handled = true;
-            }
         }
     }
 }
