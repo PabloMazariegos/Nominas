@@ -34,6 +34,7 @@ namespace CapaDiseño.Procesos.Liquidacion
 
         private void button6_Click(object sender, EventArgs e)
         {
+            int prueba;
             dataGridView1.Rows.Clear();
             dataGridView1.Refresh();
             ConexionCapaDatos cone = new ConexionCapaDatos();
