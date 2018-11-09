@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaDiseño.Procesos;
 using CapaDiseño.Procesos.Liquidacion;
+using InicioSesion;
 
 namespace CapaDiseño
 {
@@ -38,6 +39,12 @@ namespace CapaDiseño
             timer1.Start();
             lbl_fecha.Text = DateTime.Now.ToLongDateString();
             lbl_hora.Text = DateTime.Now.ToLongTimeString();
+
+            InicioSesionForm login = new InicioSesionForm();
+            login.BringToFront();
+            login.ShowDialog();
+            Usuario user = new Usuario();
+            lbl_user.Text = user.obtenerUsuario();
         }
 
         private void prestacionesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -201,6 +208,15 @@ namespace CapaDiseño
             chld.MdiParent = this;
             chld.StartPosition = FormStartPosition.CenterScreen;
             chld.Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InicioSesionForm login = new InicioSesionForm();
+            login.BringToFront();
+            login.ShowDialog();
+            Usuario user = new Usuario();
+            lbl_user.Text = user.obtenerUsuario();
         }
     }
 }
