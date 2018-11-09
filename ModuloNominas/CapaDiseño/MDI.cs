@@ -230,6 +230,7 @@ namespace CapaDiseño
             chld.MdiParent = this;
             chld.StartPosition = FormStartPosition.CenterScreen;
             chld.Show();
+
         }
     }
 }

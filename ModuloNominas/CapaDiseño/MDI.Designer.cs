@@ -58,6 +58,8 @@
             this.asignacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conceptosRetributivosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.liquidacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maestroPercepcionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cambioPercepcionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.polizasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nominasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,8 +77,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.maestroPercepcionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cambioPercepcionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -345,8 +345,22 @@
             this.cambioPercepcionToolStripMenuItem});
             this.liquidacionToolStripMenuItem.Name = "liquidacionToolStripMenuItem";
             this.liquidacionToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.liquidacionToolStripMenuItem.Text = "Liquidacion";
+            this.liquidacionToolStripMenuItem.Text = "Percepcion";
             this.liquidacionToolStripMenuItem.Click += new System.EventHandler(this.liquidacionToolStripMenuItem_Click);
+            // 
+            // maestroPercepcionToolStripMenuItem
+            // 
+            this.maestroPercepcionToolStripMenuItem.Name = "maestroPercepcionToolStripMenuItem";
+            this.maestroPercepcionToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.maestroPercepcionToolStripMenuItem.Text = "Maestro Percepcion";
+            this.maestroPercepcionToolStripMenuItem.Click += new System.EventHandler(this.maestroPercepcionToolStripMenuItem_Click);
+            // 
+            // cambioPercepcionToolStripMenuItem
+            // 
+            this.cambioPercepcionToolStripMenuItem.Name = "cambioPercepcionToolStripMenuItem";
+            this.cambioPercepcionToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.cambioPercepcionToolStripMenuItem.Text = "Cambio Percepcion";
+            this.cambioPercepcionToolStripMenuItem.Click += new System.EventHandler(this.cambioPercepcionToolStripMenuItem_Click);
             // 
             // polizasToolStripMenuItem
             // 
@@ -492,20 +506,6 @@
             this.label1.Size = new System.Drawing.Size(62, 18);
             this.label1.TabIndex = 33;
             this.label1.Text = "Fecha: ";
-            // 
-            // maestroPercepcionToolStripMenuItem
-            // 
-            this.maestroPercepcionToolStripMenuItem.Name = "maestroPercepcionToolStripMenuItem";
-            this.maestroPercepcionToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.maestroPercepcionToolStripMenuItem.Text = "Maestro Percepcion";
-            this.maestroPercepcionToolStripMenuItem.Click += new System.EventHandler(this.maestroPercepcionToolStripMenuItem_Click);
-            // 
-            // cambioPercepcionToolStripMenuItem
-            // 
-            this.cambioPercepcionToolStripMenuItem.Name = "cambioPercepcionToolStripMenuItem";
-            this.cambioPercepcionToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.cambioPercepcionToolStripMenuItem.Text = "Cambio Percepcion";
-            this.cambioPercepcionToolStripMenuItem.Click += new System.EventHandler(this.cambioPercepcionToolStripMenuItem_Click);
             // 
             // MDI
             // 
