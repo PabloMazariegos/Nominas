@@ -37,6 +37,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\..\..\Desktop\Navegador\CapaDatos\obj\Debug\CapaDatos.dll</HintPath>
     </Reference>
+    <Reference Include="CapaDatosInicioSesion">
+      <HintPath>..\..\..\..\..\..\..\..\..\CapaDatosInicioSesion.dll</HintPath>
+    </Reference>
     <Reference Include="CapaDatosNominas, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CapaDatos\bin\Debug\CapaDatosNominas.dll</HintPath>
@@ -48,6 +51,12 @@
     <Reference Include="CapaLogica, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\..\..\Desktop\Navegador\CapaLogica\obj\Debug\CapaLogica.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaLogicaInicioSesion">
+      <HintPath>..\..\..\..\..\..\..\..\..\CapaLogicaInicioSesion.dll</HintPath>
+    </Reference>
+    <Reference Include="InicioSesion">
+      <HintPath>..\..\..\..\..\..\..\..\..\InicioSesion.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -175,7 +175,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(3, 1);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(402, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(494, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -199,6 +199,7 @@
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // catalogosToolStripMenuItem
             // 
@@ -218,7 +219,7 @@
             this.deduccionesToolStripMenuItem,
             this.comisionesToolStripMenuItem});
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             // 
             // prestacionesToolStripMenuItem
@@ -252,14 +253,14 @@
             // areasToolStripMenuItem
             // 
             this.areasToolStripMenuItem.Name = "areasToolStripMenuItem";
-            this.areasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.areasToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.areasToolStripMenuItem.Text = "Areas";
             this.areasToolStripMenuItem.Click += new System.EventHandler(this.areasToolStripMenuItem_Click);
             // 
             // conceptosRetributivosToolStripMenuItem
             // 
             this.conceptosRetributivosToolStripMenuItem.Name = "conceptosRetributivosToolStripMenuItem";
-            this.conceptosRetributivosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.conceptosRetributivosToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.conceptosRetributivosToolStripMenuItem.Text = "Nominas";
             // 
             // procesosToolStripMenuItem
