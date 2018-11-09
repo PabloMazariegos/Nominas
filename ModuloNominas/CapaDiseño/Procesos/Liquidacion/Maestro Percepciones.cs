@@ -34,8 +34,10 @@ namespace CapaDiseño.Procesos.Liquidacion
 
         private void button6_Click(object sender, EventArgs e)
         {
+            dataGridView1.Rows.Clear();
+            dataGridView1.Refresh();
             ConexionCapaDatos cone = new ConexionCapaDatos();
-            string cadena,cadenaN;
+            string cadena;
             int fechaI;
             int fechaF;
             
@@ -75,6 +77,30 @@ namespace CapaDiseño.Procesos.Liquidacion
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            
+            string cadena;
+            string aux;
+            double saldo;
+            int z = 1;
+            ConexionCapaDatos cone = new ConexionCapaDatos();
+            cadena = "SELECT  tE.ID_empleado, SUM(tCR.importe) AS total" +
+            " FROM tbl_empleados tE" +
+            " INNER JOIN tbl_empleadoconcepto tEC ON" +
+            " tE.ID_Empleado = tEC.ID_Empleado" +
+            " INNER JOIN tbl_conceptosretributivos tCR ON" +
+            " tCR.ID_ConceptosR = tEC.ID_ConceptosR" +
+            " WHERE tCR.tipo = 'ABONO'" +
+            " group by 1;";
+            OdbcCommand cmd = new OdbcCommand(cadena, cone.cnxOpen());
+            OdbcDataReader leer = cmd.ExecuteReader();
+            while (leer.Read())
+            {
+
+                aux = leer.GetString(1);
+                saldo= double.Parse(aux);
+                sueldo[z]+= saldo;
+                z++;
+            }
             for (int y = 1; y < x; y++)
             {
                 dataGridView1.Rows[y - 1].Cells[3].Value = sueldo[y];
