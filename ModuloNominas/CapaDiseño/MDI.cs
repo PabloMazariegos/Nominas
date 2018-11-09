@@ -131,10 +131,10 @@ namespace CapaDiseño
 
         private void liquidacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 chld = new Form1();
-            chld.MdiParent = this;
-            chld.StartPosition = FormStartPosition.CenterScreen;
-            chld.Show();
+                Form2 chld = new Form2();
+                chld.MdiParent = this;
+                chld.StartPosition = FormStartPosition.CenterScreen;
+                chld.Show();
         }
 
         private void nominasToolStripMenuItem_Click(object sender, EventArgs e)

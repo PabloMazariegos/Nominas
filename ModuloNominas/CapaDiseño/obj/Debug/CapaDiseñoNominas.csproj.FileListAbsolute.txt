@@ -94,3 +94,4 @@ C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\No
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepEmpleados.resources
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepCierre.resources
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseñoNominas.csproj.GenerateResource.Cache
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Procesos.Liquidacion.Form2.resources
