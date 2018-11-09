@@ -74,6 +74,12 @@
     <Compile Include="Polizas.designer.cs">
       <DependentUpon>Polizas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\Liquidacion\Maestro Percepciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Liquidacion\Maestro Percepciones.Designer.cs">
+      <DependentUpon>Maestro Percepciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\Liquidacion\Percepciones empleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Polizas.resx">
       <DependentUpon>Polizas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Liquidacion\Maestro Percepciones.resx">
+      <DependentUpon>Maestro Percepciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Liquidacion\Percepciones empleado.resx">
       <DependentUpon>Percepciones empleado.cs</DependentUpon>

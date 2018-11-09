@@ -194,5 +194,13 @@ namespace CapaDiseño
             chld.StartPosition = FormStartPosition.CenterScreen;
             chld.Show();
         }
+
+        private void maestroPercepcionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 chld = new Form2();
+            chld.MdiParent = this;
+            chld.StartPosition = FormStartPosition.CenterScreen;
+            chld.Show();
+        }
     }
 }

@@ -59,3 +59,4 @@ C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\Capa
 C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepEmpleados.resources
 C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepCierre.resources
 C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseñoNominas.csproj.GenerateResource.Cache
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Procesos.Liquidacion.Form2.resources

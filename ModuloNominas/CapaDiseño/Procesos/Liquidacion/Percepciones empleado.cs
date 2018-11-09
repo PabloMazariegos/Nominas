@@ -294,7 +294,7 @@ namespace CapaDiseño.Procesos.Liquidacion
         }
         private void button3_Click(object sender, EventArgs e)
         {
-
+            
             string auxi = "";
             string cadenaN = "";
             string mes, año;
@@ -303,64 +303,73 @@ namespace CapaDiseño.Procesos.Liquidacion
             int contador = 1;
             auxi = String.Format("{0:0.00}", salariototal);
             string result = auxi.Replace(",", ".");
-            if (textBox9.Text == "")
+            try
             {
-                MessageBox.Show("Ingrese primero los datos y calcule los datos");
-            }
-            else
-            {
-                string aux;
-                ConexionCapaDatos cone = new ConexionCapaDatos();
-                posicion = comboBox1.SelectedIndex;
-                mesid = posicion.ToString();
-                aux = textBox6.Text;
-                dias = Int32.Parse(aux);
-                fecha = textBox5.Text;
-
-                cadenaN = "select Mes, Año,ID_Empleado" +
-                " from Percepciones" +
-                " where Percepciones.ID_Empleado =" + codigo_emp + ";";
-                OdbcCommand coman = new OdbcCommand(cadenaN, cone.cnxOpen());
-                OdbcDataReader leer = coman.ExecuteReader();
-                while (leer.Read())
+                if (textBox9.Text == "")
                 {
-                    mes = leer.GetString(0);
-                    año = leer.GetString(1);
-                    id = leer.GetString(2);
-                    if (mes == mesid && año == fecha && id == codigo_emp)
+                    MessageBox.Show("Ingrese primero los datos y calcule los datos");
+                }
+                else
+                {
+                    string aux;
+                    ConexionCapaDatos cone = new ConexionCapaDatos();
+                    posicion = comboBox1.SelectedIndex;
+                    mesid = posicion.ToString();
+                    aux = textBox6.Text;
+                    dias = Int32.Parse(aux);
+                    fecha = textBox5.Text;
+
+                    cadenaN = "select Mes, Año,ID_Empleado" +
+                    " from Percepciones" +
+                    " where Percepciones.ID_Empleado =" + codigo_emp + ";";
+                    OdbcCommand coman = new OdbcCommand(cadenaN, cone.cnxOpen());
+                    OdbcDataReader leer = coman.ExecuteReader();
+
+
+                    while (leer.Read())
                     {
-                        MessageBox.Show("FECHA YA INGRESADA");
-                        contador = 0;
+                        mes = leer.GetString(0);
+                        año = leer.GetString(1);
+                        id = leer.GetString(2);
+                        if (mes == mesid && año == fecha && id == codigo_emp)
+                        {
+                            MessageBox.Show("FECHA YA INGRESADA");
+                            contador = 0;
+                        }
+                        else
+                        {
+                            contador = 1;
+                        }
+                    }
+                    cone.cnxClose();
+                    if (contador == 0)
+                    {
                     }
                     else
                     {
-                        contador = 1;
-                    }
-                }
-                cone.cnxClose();
-                if (contador == 0)
-                {
-                }
-                else { 
-                    try
-                    {
-                        string cadena = "INSERT INTO Percepciones values(default," +
-                            posicion + "," +
-                            result + "," +
-                            fecha + "," +
-                            dias + "," +
-                            codigo_emp + ");";
+                        try
+                        {
+                            string cadena = "INSERT INTO Percepciones values(default," +
+                                posicion + "," +
+                                result + "," +
+                                fecha + "," +
+                                dias + "," +
+                                codigo_emp + ");";
 
-                        OdbcCommand cmd = new OdbcCommand(cadena, cone.cnxOpen());
-                        cmd.ExecuteNonQuery();
-                    }
-                    catch (OdbcException ex)
-                    {
-                        MessageBox.Show("ERROR AL INSERTAR" + "\n" + ex);
+                            OdbcCommand cmd = new OdbcCommand(cadena, cone.cnxOpen());
+                            cmd.ExecuteNonQuery();
+                        }
+                        catch (OdbcException ex)
+                        {
+                            MessageBox.Show("ERROR AL INSERTAR" + "\n" + ex);
 
+                        }
+                        cone.cnxClose();
                     }
-                    cone.cnxClose();
                 }
+            }catch(OdbcException ex)
+            {
+                MessageBox.Show("ERROR E" + "\n" + ex);
             }
         }
     }
