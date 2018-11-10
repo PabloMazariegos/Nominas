@@ -31,7 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dt_ConceptosRetributivos = new System.Windows.Forms.DataGridView();
-            this.navegador1 = new CapaDiseno.Navegador();
             this.dt_puestos = new System.Windows.Forms.DataGridView();
             this.lbl_nombreArea = new System.Windows.Forms.Label();
             this.cbx_areas = new System.Windows.Forms.ComboBox();
@@ -55,6 +54,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cbx_tipo = new System.Windows.Forms.ComboBox();
+            this.navegador1 = new CapaDiseno.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dt_ConceptosRetributivos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dt_puestos)).BeginInit();
             this.panel2.SuspendLayout();
@@ -77,20 +77,6 @@
             this.dt_ConceptosRetributivos.ReadOnly = true;
             this.dt_ConceptosRetributivos.Size = new System.Drawing.Size(856, 240);
             this.dt_ConceptosRetributivos.TabIndex = 0;
-            // 
-            // navegador1
-            // 
-            this.navegador1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.navegador1.DataGr = this.dt_ConceptosRetributivos;
-            this.navegador1.Forma = this;
-            this.navegador1.Location = new System.Drawing.Point(27, 48);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Procedimiento = null;
-            this.navegador1.pubNombrechm = "Mantenimientos.chm";
-            this.navegador1.pubNombreHtml = "ConceptosR.html";
-            this.navegador1.Size = new System.Drawing.Size(857, 60);
-            this.navegador1.TabIndex = 1;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // dt_puestos
             // 
@@ -345,11 +331,24 @@
             this.cbx_tipo.TabIndex = 20;
             this.cbx_tipo.Tag = "5";
             // 
+            // navegador1
+            // 
+            this.navegador1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.navegador1.DataGr = this.dt_ConceptosRetributivos;
+            this.navegador1.Location = new System.Drawing.Point(27, 59);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Procedimiento = null;
+            this.navegador1.pubNombrechm = "Mantenimientos.chm";
+            this.navegador1.pubNombreHtml = "ConceptosR.html";
+            this.navegador1.Size = new System.Drawing.Size(857, 60);
+            this.navegador1.TabIndex = 31;
+            // 
             // ManConceptosR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 661);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.cbx_tipo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label6);
@@ -361,7 +360,6 @@
             this.Controls.Add(this.txt_codigo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dt_ConceptosRetributivos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ManConceptosR";
@@ -378,7 +376,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dt_ConceptosRetributivos;
-        private CapaDiseno.Navegador navegador1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_importe;
         private System.Windows.Forms.Label label4;
@@ -402,5 +399,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_codArea;
         private System.Windows.Forms.Label label7;
+        private CapaDiseno.Navegador navegador1;
     }
 }

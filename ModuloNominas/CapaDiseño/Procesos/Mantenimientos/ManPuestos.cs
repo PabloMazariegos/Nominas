@@ -9,16 +9,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Odbc;
 using CapaDatosNominas;
+using CapaDiseno;
 
 namespace CapaDiseño
 {
     public partial class ManPuestos : Form
     {
         CapaDatosNominas.ConexionCapaDatos cnx = new ConexionCapaDatos();
+        Navegador nv2 = new Navegador();
+
         public ManPuestos()
         {
             InitializeComponent();
-            navegador1.ingresarTabla("puestosVW");
+            nv2.nombreForm(this);
+            nv2.ingresarTabla("puestosVW");
+
             OdbcDataAdapter dta = new OdbcDataAdapter("SELECT tbl_areas.ID_Area, tbl_areas.Nombre FROM tbl_areas", cnx.cnxOpen());
             DataSet dst = new DataSet();
             dta.Fill(dst, "tbl_areas");

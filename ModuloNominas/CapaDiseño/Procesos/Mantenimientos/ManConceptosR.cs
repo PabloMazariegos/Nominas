@@ -7,16 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaDiseno;
 
 
 namespace CapaDiseño
 {
     public partial class ManConceptosR : Form
     {
+        Navegador nv = new Navegador();
         public ManConceptosR()
         {
             InitializeComponent();
-            navegador1.ingresarTabla("conceptosVW");
+            nv.nombreForm(this);
+            nv.ingresarTabla("conceptosVW");
             
         }
 

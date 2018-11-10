@@ -29,9 +29,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dt_contratos = new System.Windows.Forms.DataGridView();
-            this.navegador1 = new CapaDiseno.Navegador();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_salario = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,9 +46,11 @@
             this.button5 = new System.Windows.Forms.Button();
             this.cbx_Jornada = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_fechainicio = new System.Windows.Forms.TextBox();
             this.cbx_tipo = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.navegador1 = new CapaDiseno.Navegador();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dt_contratos)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -57,34 +58,20 @@
             // dt_contratos
             // 
             this.dt_contratos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dt_contratos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dt_contratos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dt_contratos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_contratos.Location = new System.Drawing.Point(27, 305);
             this.dt_contratos.Name = "dt_contratos";
             this.dt_contratos.ReadOnly = true;
             this.dt_contratos.Size = new System.Drawing.Size(856, 308);
             this.dt_contratos.TabIndex = 99;
-            // 
-            // navegador1
-            // 
-            this.navegador1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.navegador1.DataGr = this.dt_contratos;
-            this.navegador1.Forma = this;
-            this.navegador1.Location = new System.Drawing.Point(27, 48);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Procedimiento = null;
-            this.navegador1.pubNombrechm = "Mantenimientos.chm";
-            this.navegador1.pubNombreHtml = "Contratos.html";
-            this.navegador1.Size = new System.Drawing.Size(857, 60);
-            this.navegador1.TabIndex = 100;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // label6
             // 
@@ -103,7 +90,7 @@
             this.txt_salario.Name = "txt_salario";
             this.txt_salario.Size = new System.Drawing.Size(100, 21);
             this.txt_salario.TabIndex = 6;
-            this.txt_salario.Tag = "6";
+            this.txt_salario.Tag = "5";
             this.txt_salario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_importe_KeyPress);
             // 
             // label4
@@ -123,7 +110,7 @@
             this.txt_descrip.Name = "txt_descrip";
             this.txt_descrip.Size = new System.Drawing.Size(266, 21);
             this.txt_descrip.TabIndex = 4;
-            this.txt_descrip.Tag = "4";
+            this.txt_descrip.Tag = "3";
             this.txt_descrip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_descrip_KeyPress);
             // 
             // label3
@@ -143,7 +130,7 @@
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(174, 21);
             this.txt_nombre.TabIndex = 3;
-            this.txt_nombre.Tag = "3";
+            this.txt_nombre.Tag = "2";
             this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
             // 
             // txt_codigo
@@ -236,7 +223,7 @@
             this.cbx_Jornada.Name = "cbx_Jornada";
             this.cbx_Jornada.Size = new System.Drawing.Size(173, 21);
             this.cbx_Jornada.TabIndex = 5;
-            this.cbx_Jornada.Tag = "5";
+            this.cbx_Jornada.Tag = "4";
             // 
             // label5
             // 
@@ -246,14 +233,6 @@
             this.label5.Size = new System.Drawing.Size(68, 13);
             this.label5.TabIndex = 31;
             this.label5.Text = "Fecha Inicio:";
-            // 
-            // txt_fechainicio
-            // 
-            this.txt_fechainicio.Location = new System.Drawing.Point(507, 147);
-            this.txt_fechainicio.Name = "txt_fechainicio";
-            this.txt_fechainicio.Size = new System.Drawing.Size(131, 20);
-            this.txt_fechainicio.TabIndex = 2;
-            this.txt_fechainicio.Tag = "2";
             // 
             // cbx_tipo
             // 
@@ -265,7 +244,7 @@
             this.cbx_tipo.Name = "cbx_tipo";
             this.cbx_tipo.Size = new System.Drawing.Size(96, 21);
             this.cbx_tipo.TabIndex = 7;
-            this.cbx_tipo.Tag = "7";
+            this.cbx_tipo.Tag = "6";
             // 
             // label7
             // 
@@ -277,14 +256,52 @@
             this.label7.TabIndex = 34;
             this.label7.Text = "Tipo:";
             // 
+            // navegador1
+            // 
+            this.navegador1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.navegador1.DataGr = this.dt_contratos;
+            this.navegador1.Location = new System.Drawing.Point(27, 61);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Procedimiento = null;
+            this.navegador1.pubNombrechm = "Mantenimientos.chm";
+            this.navegador1.pubNombreHtml = "Contratos.html";
+            this.navegador1.Size = new System.Drawing.Size(857, 60);
+            this.navegador1.TabIndex = 102;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "yyyy/MM/dd";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(507, 145);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 103;
+            this.dateTimePicker1.Tag = "";
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Control;
+            this.textBox1.Location = new System.Drawing.Point(713, 150);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(146, 13);
+            this.textBox1.TabIndex = 104;
+            this.textBox1.Tag = "7";
+            this.textBox1.Visible = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // ManContratos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 661);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cbx_tipo);
-            this.Controls.Add(this.txt_fechainicio);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cbx_Jornada);
             this.Controls.Add(this.panel2);
@@ -297,7 +314,6 @@
             this.Controls.Add(this.txt_codigo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dt_contratos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ManContratos";
@@ -313,7 +329,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dt_contratos;
-        private CapaDiseno.Navegador navegador1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_salario;
         private System.Windows.Forms.Label label4;
@@ -329,8 +344,10 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ComboBox cbx_Jornada;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt_fechainicio;
         private System.Windows.Forms.ComboBox cbx_tipo;
         private System.Windows.Forms.Label label7;
+        private CapaDiseno.Navegador navegador1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

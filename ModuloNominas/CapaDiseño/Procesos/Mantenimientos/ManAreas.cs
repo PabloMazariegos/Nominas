@@ -8,17 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Odbc;
+using CapaDiseno;
 
 namespace CapaDiseño
 {
     public partial class ManAreas : Form
     {
+        Navegador nv = new Navegador();
         public ManAreas()
         {
             InitializeComponent();
-            navegador1.ingresarTabla("areasVW");
+            nv.nombreForm(this);
+            nv.ingresarTabla("areasVW");
             
-            
+            nv.            
         }
 
         private void button5_Click(object sender, EventArgs e)

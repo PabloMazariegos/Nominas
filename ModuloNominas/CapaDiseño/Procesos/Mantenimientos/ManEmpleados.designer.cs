@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dt_Empleados = new System.Windows.Forms.DataGridView();
             this.dt_ConceptosRetributivos = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -67,7 +67,6 @@
             this.cbx_area = new System.Windows.Forms.ComboBox();
             this.txt_direccion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.navegador1 = new CapaDiseno.Navegador();
             this.lbl_nombreArea = new System.Windows.Forms.Label();
             this.lbl_nombrepuesto = new System.Windows.Forms.Label();
             this.lbl_contrato = new System.Windows.Forms.Label();
@@ -76,6 +75,8 @@
             this.lbl_contratodes = new System.Windows.Forms.Label();
             this.lbl_jornada = new System.Windows.Forms.Label();
             this.lbl_salario = new System.Windows.Forms.Label();
+            this.navegador1 = new CapaDiseno.Navegador();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dt_Empleados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dt_ConceptosRetributivos)).BeginInit();
             this.panel2.SuspendLayout();
@@ -85,14 +86,14 @@
             // dt_Empleados
             // 
             this.dt_Empleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dt_Empleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dt_Empleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dt_Empleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_Empleados.Location = new System.Drawing.Point(26, 421);
             this.dt_Empleados.Name = "dt_Empleados";
@@ -102,14 +103,14 @@
             // dt_ConceptosRetributivos
             // 
             this.dt_ConceptosRetributivos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dt_ConceptosRetributivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dt_ConceptosRetributivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dt_ConceptosRetributivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_ConceptosRetributivos.Location = new System.Drawing.Point(27, 332);
             this.dt_ConceptosRetributivos.Name = "dt_ConceptosRetributivos";
@@ -386,11 +387,13 @@
             // 
             // txt_fecha
             // 
-            this.txt_fecha.Location = new System.Drawing.Point(191, 283);
+            this.txt_fecha.Location = new System.Drawing.Point(21, 395);
             this.txt_fecha.Name = "txt_fecha";
-            this.txt_fecha.Size = new System.Drawing.Size(176, 20);
+            this.txt_fecha.Size = new System.Drawing.Size(70, 20);
             this.txt_fecha.TabIndex = 6;
             this.txt_fecha.Tag = "6";
+            this.txt_fecha.Visible = false;
+            this.txt_fecha.TextChanged += new System.EventHandler(this.txt_fecha_TextChanged);
             // 
             // label10
             // 
@@ -455,6 +458,7 @@
             this.cbx_area.TabIndex = 10;
             this.cbx_area.Tag = "10";
             this.cbx_area.SelectedIndexChanged += new System.EventHandler(this.cbx_area_SelectedIndexChanged);
+            this.cbx_area.TextUpdate += new System.EventHandler(this.cbx_area_TextUpdate);
             this.cbx_area.EnabledChanged += new System.EventHandler(this.cbx_area_EnabledChanged);
             // 
             // txt_direccion
@@ -476,19 +480,6 @@
             this.label6.Size = new System.Drawing.Size(62, 15);
             this.label6.TabIndex = 67;
             this.label6.Text = "Direccion:";
-            // 
-            // navegador1
-            // 
-            this.navegador1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.navegador1.DataGr = this.dt_Empleados;
-            this.navegador1.Forma = this;
-            this.navegador1.Location = new System.Drawing.Point(26, 48);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Procedimiento = null;
-            this.navegador1.pubNombrechm = "Mantenimientos.chm";
-            this.navegador1.pubNombreHtml = "Empleados.html";
-            this.navegador1.Size = new System.Drawing.Size(857, 60);
-            this.navegador1.TabIndex = 100;
             // 
             // lbl_nombreArea
             // 
@@ -580,11 +571,35 @@
             this.lbl_salario.TabIndex = 105;
             this.lbl_salario.Text = "SALARIO";
             // 
+            // navegador1
+            // 
+            this.navegador1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.navegador1.DataGr = this.dt_Empleados;
+            this.navegador1.Location = new System.Drawing.Point(26, 48);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Procedimiento = null;
+            this.navegador1.pubNombrechm = "Mantenimientos.chm";
+            this.navegador1.pubNombreHtml = "Empleados.html";
+            this.navegador1.Size = new System.Drawing.Size(857, 60);
+            this.navegador1.TabIndex = 106;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "yyyy/MM/dd";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(170, 283);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(197, 20);
+            this.dateTimePicker1.TabIndex = 107;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // ManEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 661);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.lbl_salario);
             this.Controls.Add(this.lbl_jornada);
             this.Controls.Add(this.lbl_contratodes);
@@ -593,7 +608,6 @@
             this.Controls.Add(this.lbl_contrato);
             this.Controls.Add(this.lbl_nombrepuesto);
             this.Controls.Add(this.lbl_nombreArea);
-            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.txt_direccion);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_fecha);
@@ -672,7 +686,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txt_direccion;
         private System.Windows.Forms.Label label6;
-        private CapaDiseno.Navegador navegador1;
         private System.Windows.Forms.Label lbl_contrato;
         private System.Windows.Forms.Label lbl_nombrepuesto;
         private System.Windows.Forms.Label lbl_nombreArea;
@@ -681,5 +694,7 @@
         private System.Windows.Forms.Label lbl_contratodes;
         private System.Windows.Forms.Label lbl_descrippuesto;
         private System.Windows.Forms.Label lbl_descriparea;
+        private CapaDiseno.Navegador navegador1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

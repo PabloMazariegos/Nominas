@@ -9,18 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaDatosNominas;
 using System.Data.Odbc;
+using CapaDiseno;
 
 namespace CapaDiseño
 {
     public partial class ManEmpleados : Form
     {
-
+        Navegador nv = new Navegador();
         CapaDatosNominas.ConexionCapaDatos cnx = new ConexionCapaDatos();
         public ManEmpleados()
         {
             
             InitializeComponent();
-            navegador1.ingresarTabla("empleadosVW");
+            nv.nombreForm(this);
+            nv.ingresarTabla("empleadosVW");
 
             OdbcDataAdapter dta = new OdbcDataAdapter("SELECT tbl_areas.ID_Area, tbl_areas.Nombre FROM tbl_areas", cnx.cnxOpen());
             DataSet dst = new DataSet();
@@ -279,6 +281,21 @@ namespace CapaDiseño
                 lbl_salario.Text = "";
                 lbl_contrato.Text = "";
             }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            txt_fecha.Text= dateTimePicker1.Value.ToString("yyyy/MM/dd");
+        }
+
+        private void txt_fecha_TextChanged(object sender, EventArgs e)
+        {
+            dateTimePicker1.Text = txt_fecha.Text;
+        }
+
+        private void cbx_area_TextUpdate(object sender, EventArgs e)
+        {
+            
         }
     }
 }

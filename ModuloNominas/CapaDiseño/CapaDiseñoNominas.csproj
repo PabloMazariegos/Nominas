@@ -33,9 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BIT">
+      <HintPath>..\..\..\..\..\..\..\..\..\BIT\BIT\bin\Debug\BIT.dll</HintPath>
+    </Reference>
     <Reference Include="CapaDatos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Desktop\Navegador\CapaDatos\obj\Debug\CapaDatos.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\prueba444\prueba444\bin\Debug\CapaDatos.dll</HintPath>
     </Reference>
     <Reference Include="CapaDatosInicioSesion">
       <HintPath>..\..\..\..\..\..\..\..\..\CapaDatosInicioSesion.dll</HintPath>
@@ -46,17 +49,25 @@
     </Reference>
     <Reference Include="CapaDiseno, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Desktop\Navegador\CapaDiseno\obj\Debug\CapaDiseno.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\prueba444\prueba444\bin\Debug\CapaDiseno.dll</HintPath>
     </Reference>
     <Reference Include="CapaLogica, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Desktop\Navegador\CapaLogica\obj\Debug\CapaLogica.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\prueba444\prueba444\bin\Debug\CapaLogica.dll</HintPath>
     </Reference>
     <Reference Include="CapaLogicaInicioSesion">
       <HintPath>..\..\..\..\..\..\..\..\..\CapaLogicaInicioSesion.dll</HintPath>
     </Reference>
+    <Reference Include="ConsultasInteligentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Data">
+      <HintPath>..\..\..\..\..\..\..\..\..\BIT\BIT\bin\Debug\Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DLL- Reporteador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="InicioSesion">
       <HintPath>..\..\..\..\..\..\..\..\..\InicioSesion.dll</HintPath>
+    </Reference>
+    <Reference Include="Logic">
+      <HintPath>..\..\..\..\..\..\..\..\..\BIT\BIT\bin\Debug\Logic.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
