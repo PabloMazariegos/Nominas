@@ -38,7 +38,7 @@ namespace CapaDiseño
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
-            fecha_final = dateTimePicker1.Value.Date.ToShortDateString();
+            fecha_final = dateTimePicker1.Value.Date.ToShortDateString(); //Almacenar fecha final del DataPicker
         }
 
         private void panel2_HelpRequested(object sender, HelpEventArgs hlpevent)
@@ -46,9 +46,11 @@ namespace CapaDiseño
             Help.ShowHelp(this, "C:/ayuda_cierre de nominas.chm");
         }
 
+  
+
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            fecha_inicio = dateTimePicker1.Value.Date.ToShortDateString();
+            fecha_inicio = dateTimePicker1.Value.Date.ToShortDateString(); //Almacenar fecha inicial del DataPicker
         }
     }
 }
