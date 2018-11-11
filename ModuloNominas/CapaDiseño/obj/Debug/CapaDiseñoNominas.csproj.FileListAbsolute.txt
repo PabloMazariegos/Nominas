@@ -153,3 +153,14 @@ C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\No
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\Data.pdb
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\Logic.pdb
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\RetornoCadenaDeConexion.pdb
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\DLL- Reporteador.dll
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\DLL- Reporteador.pdb
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\DLL- Reporteador.xml
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\InicioSesion.dll
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDatosInicioSesion.dll
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\InicioSesion.pdb
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaLogicaInicioSesion.dll
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaLogicaInicioSesion.pdb
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDatosInicioSesion.pdb
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.AsigConcepto.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.EmpConceptos.resources

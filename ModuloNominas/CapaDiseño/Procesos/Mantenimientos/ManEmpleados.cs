@@ -23,6 +23,7 @@ namespace CapaDiseño
             InitializeComponent();
             nv.nombreForm(this);
             nv.ingresarTabla("empleadosVW");
+            nv.NumeroAplicacion("3102");
 
             OdbcDataAdapter dta = new OdbcDataAdapter("SELECT tbl_areas.ID_Area, tbl_areas.Nombre FROM tbl_areas", cnx.cnxOpen());
             DataSet dst = new DataSet();
@@ -186,6 +187,7 @@ namespace CapaDiseño
             OdbcDataReader dr = dta.ExecuteReader();
             while (dr.Read())
             {
+               
                 lbl_nombreArea.Text = "NOMBRE:  " + dr.GetString(0).ToLower();
                 lbl_descriparea.Text = "DESCRIPCION:  " + dr.GetString(1).ToLower();
 

@@ -23,6 +23,7 @@ namespace CapaDiseño
             InitializeComponent();
             nv2.nombreForm(this);
             nv2.ingresarTabla("puestosVW");
+            nv2.NumeroAplicacion("3103");
 
             OdbcDataAdapter dta = new OdbcDataAdapter("SELECT tbl_areas.ID_Area, tbl_areas.Nombre FROM tbl_areas", cnx.cnxOpen());
             DataSet dst = new DataSet();

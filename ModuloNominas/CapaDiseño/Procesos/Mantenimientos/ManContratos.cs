@@ -19,7 +19,8 @@ namespace CapaDiseño
             InitializeComponent();
             nv.nombreForm(this);
             nv.ingresarTabla("contratosVW");
-           
+            nv.NumeroAplicacion("3104");
+
 
 
         }

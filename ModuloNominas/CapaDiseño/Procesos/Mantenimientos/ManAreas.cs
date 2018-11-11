@@ -20,8 +20,9 @@ namespace CapaDiseño
             InitializeComponent();
             nv.nombreForm(this);
             nv.ingresarTabla("areasVW");
+            nv.NumeroAplicacion("3102");
             
-            nv.            
+                    
         }
 
         private void button5_Click(object sender, EventArgs e)
