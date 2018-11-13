@@ -139,8 +139,15 @@ namespace CapaDiseño
                         idEmps.Add(Convert.ToInt32(dtEmpleados.Rows[i].Cells["DPI"].Value));
                     }
                 }
-                AsigConcepto asigcon = new AsigConcepto(idEmps);
-                asigcon.Show();
+                if (idEmps.Count == 0)
+                {
+                    MessageBox.Show("Seleccione Empleados", "Asignacion Conceptos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }else
+                {
+                    AsigConcepto asigcon = new AsigConcepto(idEmps);
+                    asigcon.Show();
+                }
+               
 
             }
 

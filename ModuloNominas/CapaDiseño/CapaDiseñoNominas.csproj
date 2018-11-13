@@ -36,25 +36,23 @@
     <Reference Include="BIT">
       <HintPath>..\..\..\..\..\..\..\..\..\BIT\BIT\bin\Debug\BIT.dll</HintPath>
     </Reference>
-    <Reference Include="CapaDatos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\DLLs\Navegador\CapaDatos\bin\Debug\CapaDatos.dll</HintPath>
-    </Reference>
+    <Reference Include="CapaDatos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="CapaDatosInicioSesion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="CapaDatosNominas, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CapaDatos\bin\Debug\CapaDatosNominas.dll</HintPath>
     </Reference>
     <Reference Include="CapaDiseno, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\DLLs\Navegador\CapaDiseno\bin\Debug\CapaDiseno.dll</HintPath>
+      <HintPath>bin\Debug\CapaDiseno.dll</HintPath>
     </Reference>
-    <Reference Include="CapaLogica, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\DLLs\Navegador\CapaLogica\bin\Debug\CapaLogica.dll</HintPath>
-    </Reference>
+    <Reference Include="CapaLogica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="CapaLogicaInicioSesion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\..\DLL-inicio-de-sesion-master\CapaLogica\bin\Debug\CapaLogicaInicioSesion.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaLogicaNominas">
+      <HintPath>..\CapaLogica\bin\Debug\CapaLogicaNominas.dll</HintPath>
     </Reference>
     <Reference Include="ConsultasInteligentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Data">

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Odbc;
 using CapaDatosNominas;
+using CapaLogicaNominas;
 
 namespace CapaDiseño
 {
@@ -23,17 +24,14 @@ namespace CapaDiseño
         }
 
         //CONSTRUCTOR CON EMPLEADOS INDIVIDUALES
+        //llena el datagrid con los empleados seleccionados en el form anterior, obtiene el query de la capa logica
         public AsigConcepto (List<int> lista)
         {
             InitializeComponent();
             empleadosSelect = lista;
-            string query = "";
-            foreach(var DPI in lista)
-            {
-                query += "SELECT * FROM empleadoConceptoVW WHERE DPI=" + DPI + "\n UNION ";
-            }
-            string queryFix= query.Remove(query.Length - 6, 6);
-            OdbcDataAdapter cmd = new OdbcDataAdapter(queryFix, cnx.cnxOpen());
+            CapaLogicaNominas.querysConceptos querys = new querysConceptos();
+            string query = querys.GetQueryEmpSelected(empleadosSelect); //query de la capa logica, solo los empleados que se seleccionaron
+            OdbcDataAdapter cmd = new OdbcDataAdapter(query, cnx.cnxOpen());
             DataSet ds = new DataSet();
             cmd.Fill(ds, "tbl_empSelected");
             dtEmpSelected.DataSource = ds.Tables["tbl_empSelected"];
@@ -43,6 +41,7 @@ namespace CapaDiseño
         }
 
         //CONTRUCTOR CON AREA
+        // llena el data grid con los empleados del area que se selecciono en el form anterior
         public AsigConcepto (string area)
         {
             InitializeComponent();
@@ -56,11 +55,11 @@ namespace CapaDiseño
 
         private void Asignacion_de_area_Load(object sender, EventArgs e)
         {
-           
+            //Llena el datagrid con todos los conceptos retributivos y agrega una columna de checkboxs para seleccionarlos
             OdbcDataAdapter emp = new OdbcDataAdapter("SELECT * FROM empleadoConceptoVW_conceptos", cnx.cnxOpen());
             DataSet dst2 = new DataSet();
             dst2.Tables.Add("tbl_conceptos");
-            dst2.Tables["tbl_conceptos"].Columns.Add("Seleccion", typeof(bool));
+            dst2.Tables["tbl_conceptos"].Columns.Add("Seleccion", typeof(bool)); //columna de checkboxs
             dst2.Tables["tbl_conceptos"].Columns["Seleccion"].DefaultValue = false;
             emp.Fill(dst2, "tbl_conceptos");            
             dtConceptos.DataSource = dst2.Tables["tbl_conceptos"];
@@ -112,15 +111,14 @@ namespace CapaDiseño
 
         private void button4_Click(object sender, EventArgs e)
         {
+            //Recorre el datagrid buscando todos los checkboxs que se seleccionaron, guarda el Codigo de cada concepto
             List<int> idConceptos = new List<int>();
-            string query="", query2 = "";
-            string queryFix="", queryFix2 = "";
             for (int i = 0; i < dtConceptos.Rows.Count; i++)
             {
                 bool chkSelected = Convert.ToBoolean(dtConceptos.Rows[i].Cells[0].Value);
-                if (chkSelected == true)
+                if (chkSelected == true) //Si el checkbox esta seleccionado el codigo se guarda en una lista
                 {
-                    idConceptos.Add(Convert.ToInt32(dtConceptos.Rows[i].Cells["Codigo"].Value));
+                    idConceptos.Add(Convert.ToInt32(dtConceptos.Rows[i].Cells["Codigo"].Value)); 
                 }
             }
             if (idConceptos.Count != 0)
@@ -128,32 +126,29 @@ namespace CapaDiseño
                 DialogResult op = MessageBox.Show("Esta seguro de Asignar el concepto al empleado?", "Asignacion Conceptos", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (op == DialogResult.Yes)
                 {
-                    foreach (var concepto in idConceptos)
+                    //obtiene el query de la capa logica con todos los valores para asignar a los empleados seleccionados
+                    //la capa logica devuelve el query solo con los datos que no existen en la tabla.
+                    CapaLogicaNominas.querysConceptos query = new querysConceptos();
+                    string queryInsert = query.GetQueryInsertEmpConcepto(empleadosSelect, idConceptos);
+                    if (queryInsert != "")
                     {
-                        foreach (var empleado in empleadosSelect)
+                        try
                         {
-                            query += "(" + empleado + "," + concepto + "),";
-                            
+                            OdbcCommand cmd = new OdbcCommand(queryInsert, cnx.cnxOpen());
+                            cmd.ExecuteNonQuery();
+                            cnx.cnxClose();
+                            MessageBox.Show("Cambios realizados!");
+                            this.Dispose();
                         }
-                        queryFix = query.Remove(query.Length - 1, 1);
-                    }
-                    string queryInsert = "INSERT INTO tbl_empleadoconcepto VALUES" + queryFix;
-                    
-                    MessageBox.Show(queryInsert);
-                    try
+                        catch (OdbcException ex)
+                        {
+                            MessageBox.Show("ERROR " + ex);
+                        }
+                    }else
                     {
-                        OdbcCommand cmd = new OdbcCommand(queryInsert, cnx.cnxOpen());
-                        cmd.ExecuteNonQuery();
-                        cnx.cnxClose();
                         MessageBox.Show("Cambios realizados!");
                         this.Dispose();
                     }
-                    catch (OdbcException ex)
-                    {
-                        MessageBox.Show("ERROR " + ex);
-                    }
-
-
                 }
             }
         }

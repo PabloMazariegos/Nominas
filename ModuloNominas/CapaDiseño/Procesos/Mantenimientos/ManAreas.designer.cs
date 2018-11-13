@@ -307,8 +307,8 @@
             this.navegador1.Location = new System.Drawing.Point(22, 48);
             this.navegador1.Name = "navegador1";
             this.navegador1.Procedimiento = null;
-            this.navegador1.pubNombrechm = "Mantenimientos.chm";
-            this.navegador1.pubNombreHtml = "Areas.html";
+            this.navegador1.pubNombrechm = null;
+            this.navegador1.pubNombreHtml = null;
             this.navegador1.Size = new System.Drawing.Size(857, 60);
             this.navegador1.TabIndex = 30;
             // 

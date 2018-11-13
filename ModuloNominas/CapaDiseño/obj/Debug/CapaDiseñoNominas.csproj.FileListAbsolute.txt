@@ -123,9 +123,6 @@ C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\Capa
 C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepEmpleados.resources
 C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepCierre.resources
 C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseñoNominas.csproj.GenerateResource.Cache
-C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDatos.dll
-C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDiseno.dll
-C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaLogica.dll
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CrystalDecisions.Shared.dll
@@ -145,22 +142,16 @@ C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\No
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\stdole.dll
-C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\BIT.dll
-C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\Data.dll
-C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\Logic.dll
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\RetornoCadenaDeConexion.dll
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\BIT.pdb
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\Data.pdb
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\Logic.pdb
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\RetornoCadenaDeConexion.pdb
-C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\DLL- Reporteador.dll
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\DLL- Reporteador.pdb
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\DLL- Reporteador.xml
-C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\InicioSesion.dll
-C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDatosInicioSesion.dll
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\InicioSesion.pdb
-C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaLogicaInicioSesion.dll
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaLogicaInicioSesion.pdb
-C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDatosInicioSesion.pdb
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.AsigConcepto.resources
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.EmpConceptos.resources
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaLogicaNominas.dll
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaLogicaNominas.pdb

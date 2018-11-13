@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Odbc;
 using CapaDatosNominas;
+using CapaLogicaNominas;
 
 namespace CapaDiseño
 {
@@ -37,22 +38,10 @@ namespace CapaDiseño
 
         private void Asignacion_de_area_Load(object sender, EventArgs e)
         {
-           
-            OdbcDataAdapter emp = new OdbcDataAdapter("SELECT tbl_conceptosretributivos.ID_ConceptosR as 'Codigo',"+
-                                                             "tbl_conceptosretributivos.nombre,"+
-                                                             "tbl_conceptosretributivos.descripcion,"+
-                                                             "tbl_conceptosretributivos.importe,"+
-                                                             "tbl_conceptosretributivos.tipo "+
-                                                             "FROM tbl_empleados "+
-                                                             "INNER JOIN tbl_empleadoconcepto ON tbl_empleadoconcepto.ID_Empleado= tbl_empleados.ID_Empleado "+
-                                                             "INNER JOIN tbl_conceptosretributivos ON tbl_empleadoconcepto.ID_ConceptosR= tbl_conceptosretributivos.ID_ConceptosR "+
-                                                             "WHERE tbl_empleados.ID_Empleado="+idEmp+";", cnx.cnxOpen());
+            CapaLogicaNominas.querysConceptos conceptoEmpleado = new querysConceptos();
             DataSet dst2 = new DataSet();
-            dst2.Tables.Add("tbl_conceptos");
-            dst2.Tables["tbl_conceptos"].Columns.Add("Seleccion", typeof(bool));
-            dst2.Tables["tbl_conceptos"].Columns["Seleccion"].DefaultValue = true;
-            emp.Fill(dst2, "tbl_conceptos");            
-            dtConceptos.DataSource = dst2.Tables["tbl_conceptos"];
+            dst2.Tables.Add(conceptoEmpleado.ConceptosdeEmpleados(idEmp));
+            dtConceptos.DataSource = dst2.Tables[0];
             dtConceptos.AllowUserToAddRows = false;
             dtConceptos.Refresh();
             cnx.cnxClose();
@@ -102,7 +91,6 @@ namespace CapaDiseño
         private void button4_Click(object sender, EventArgs e)
         {
             List<int> idConceptos = new List<int>();
-            string query = "";
             for (int i = 0; i < dtConceptos.Rows.Count; i++)
             {
                 bool chkSelected = Convert.ToBoolean(dtConceptos.Rows[i].Cells[0].Value);
@@ -114,17 +102,13 @@ namespace CapaDiseño
 
             if (idConceptos.Count != 0)
             {
+                CapaLogicaNominas.querysConceptos conEmp = new querysConceptos();                
                 DialogResult op = MessageBox.Show("Esta seguro de eliminar el concepto al empleado?", "Conceptos Asignados", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if(op== DialogResult.Yes)
-                {
-                    foreach (var concepto in idConceptos)
-                    {
-                        query += "DELETE FROM tbl_empleadoconcepto WHERE tbl_empleadoconcepto.ID_Empleado=" + idEmp + " AND tbl_empleadoconcepto.ID_ConceptosR="+concepto+"\n UNION ";
-                    }
-                    string queryFix = query.Remove(query.Length - 6, 6);
+                {                    
                     try
                     {                        
-                        OdbcCommand cmd = new OdbcCommand(queryFix, cnx.cnxOpen());
+                        OdbcCommand cmd = new OdbcCommand(conEmp.GetQueryDelete(idEmp,idConceptos), cnx.cnxOpen());
                         cmd.ExecuteNonQuery();
                         cnx.cnxClose();
                         MessageBox.Show("Cambios realizados!");
@@ -132,8 +116,7 @@ namespace CapaDiseño
                     }catch(OdbcException ex)
                     {
                         MessageBox.Show("ERROR "+ex);
-                    }
-                    
+                    }                    
                 }
             }else
             {
