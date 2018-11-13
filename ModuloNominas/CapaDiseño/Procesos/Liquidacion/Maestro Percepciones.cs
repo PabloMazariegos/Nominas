@@ -222,7 +222,6 @@ namespace CapaDiseño.Procesos.Liquidacion
                                                 idemp[y] + "," +
                                                 sueldo[y] + "," +
                                                 dias + ");";
-                                MessageBox.Show(cadena);
                                 ConexionCapaDatos cone = new ConexionCapaDatos();
                                 OdbcCommand cmd = new OdbcCommand(cadena, cone.cnxOpen());
                                 cmd.ExecuteNonQuery();
