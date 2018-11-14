@@ -47,12 +47,14 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.Borrar = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -238,54 +240,6 @@
             this.panel2.Size = new System.Drawing.Size(917, 42);
             this.panel2.TabIndex = 28;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "",
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.comboBox1.Location = new System.Drawing.Point(297, 60);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(117, 21);
-            this.comboBox1.TabIndex = 32;
-            this.comboBox1.Text = "Seleccione un mes";
-            // 
-            // button1
-            // 
-            this.button1.Image = global::CapaDiseño.Properties.Resources.guardar;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(488, 576);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 63);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "Guardar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button6
-            // 
-            this.button6.Image = global::CapaDiseño.Properties.Resources.Refrescar;
-            this.button6.Location = new System.Drawing.Point(412, 233);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(82, 67);
-            this.button6.TabIndex = 30;
-            this.button6.Text = "Actualizar";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
             // button4
             // 
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -314,11 +268,59 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "",
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.comboBox1.Location = new System.Drawing.Point(297, 60);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(117, 21);
+            this.comboBox1.TabIndex = 32;
+            this.comboBox1.Text = "Seleccione un mes";
+            // 
+            // button1
+            // 
+            this.button1.Image = global::CapaDiseño.Properties.Resources.guardar;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(501, 576);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 63);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Guardar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button6
+            // 
+            this.button6.Image = global::CapaDiseño.Properties.Resources.Refrescar;
+            this.button6.Location = new System.Drawing.Point(412, 233);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(82, 67);
+            this.button6.TabIndex = 30;
+            this.button6.Text = "Actualizar";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // button3
             // 
             this.button3.Image = global::CapaDiseño.Properties.Resources.aceptar;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(297, 576);
+            this.button3.Location = new System.Drawing.Point(391, 576);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 63);
             this.button3.TabIndex = 25;
@@ -327,11 +329,38 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // Borrar
+            // 
+            this.Borrar.Image = global::CapaDiseño.Properties.Resources.Borrar;
+            this.Borrar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Borrar.Location = new System.Drawing.Point(612, 576);
+            this.Borrar.Name = "Borrar";
+            this.Borrar.Size = new System.Drawing.Size(75, 63);
+            this.Borrar.TabIndex = 33;
+            this.Borrar.Text = "Guardar";
+            this.Borrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Borrar.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Image = global::CapaDiseño.Properties.Resources.Editar;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button7.Location = new System.Drawing.Point(272, 576);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 63);
+            this.button7.TabIndex = 34;
+            this.button7.Text = "Agregar un empleado";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 661);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.Borrar);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox6);
@@ -392,5 +421,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button Borrar;
+        private System.Windows.Forms.Button button7;
     }
 }
