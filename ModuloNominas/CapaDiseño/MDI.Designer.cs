@@ -58,6 +58,8 @@
             this.asignacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conceptosRetributivosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.liquidacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maestroPercepcionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cambioPercepcionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.polizasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nominasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -338,10 +340,31 @@
             // 
             // liquidacionToolStripMenuItem
             // 
+            this.liquidacionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.maestroPercepcionToolStripMenuItem,
+            this.cambioPercepcionToolStripMenuItem});
             this.liquidacionToolStripMenuItem.Name = "liquidacionToolStripMenuItem";
             this.liquidacionToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+<<<<<<< HEAD
             this.liquidacionToolStripMenuItem.Text = "Percepciones";
+=======
+            this.liquidacionToolStripMenuItem.Text = "Percepcion";
+>>>>>>> bc2179b49168c3f397d4fe38552d55e664ca5aab
             this.liquidacionToolStripMenuItem.Click += new System.EventHandler(this.liquidacionToolStripMenuItem_Click);
+            // 
+            // maestroPercepcionToolStripMenuItem
+            // 
+            this.maestroPercepcionToolStripMenuItem.Name = "maestroPercepcionToolStripMenuItem";
+            this.maestroPercepcionToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.maestroPercepcionToolStripMenuItem.Text = "Maestro Percepcion";
+            this.maestroPercepcionToolStripMenuItem.Click += new System.EventHandler(this.maestroPercepcionToolStripMenuItem_Click);
+            // 
+            // cambioPercepcionToolStripMenuItem
+            // 
+            this.cambioPercepcionToolStripMenuItem.Name = "cambioPercepcionToolStripMenuItem";
+            this.cambioPercepcionToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.cambioPercepcionToolStripMenuItem.Text = "Cambio Percepcion";
+            this.cambioPercepcionToolStripMenuItem.Click += new System.EventHandler(this.cambioPercepcionToolStripMenuItem_Click);
             // 
             // polizasToolStripMenuItem
             // 
@@ -574,6 +597,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem polizasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contratosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem maestroPercepcionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cambioPercepcionToolStripMenuItem;
     }
 }
 

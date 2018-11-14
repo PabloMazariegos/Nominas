@@ -92,7 +92,10 @@ C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\Mod
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseñoNominas.csproj.GenerateResource.Cache
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.exe
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\3ra Entrega\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.pdb
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> bc2179b49168c3f397d4fe38552d55e664ca5aab
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.exe
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.pdb
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDiseño.exe
@@ -126,3 +129,39 @@ C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\No
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepEmpleados.resources
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepCierre.resources
 C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseñoNominas.csproj.GenerateResource.Cache
+<<<<<<< HEAD
+=======
+C:\Users\pablo\Desktop\Pablo\UMG\Analisis de sistemas\proyecto 2\Nominas\repo\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Procesos.Liquidacion.Form2.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.exe
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.pdb
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDiseño.exe
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDiseño.pdb
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDatosNominas.dll
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDatos.pdb
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDatosNominas.pdb
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaDiseno.pdb
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\bin\Debug\CapaLogica.pdb
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseñoNominas.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatAreas.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatPrestaciones.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Procesos.Liquidacion.Form2.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Procesos.Liquidacion.Form1.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManContratos.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManPuestos.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Polizas.Polizas.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManEmpleados.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManConceptosR.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.ManAreas.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.AsigAreas.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatPagos.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatDeducciones.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.CatComisiones.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.HerCambioServidor.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.MDI.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Properties.Resources.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepSueldos.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepEmpleados.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.RepCierre.resources
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseñoNominas.csproj.GenerateResource.Cache
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDiseño\obj\Debug\CapaDiseño.Procesos.Liquidacion.Form3.resources
+>>>>>>> bc2179b49168c3f397d4fe38552d55e664ca5aab

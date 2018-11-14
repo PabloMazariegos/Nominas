@@ -45,7 +45,10 @@ namespace CapaDiseño
             login.ShowDialog();
             Usuario user = new Usuario();
             lbl_user.Text = user.obtenerUsuario();
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc2179b49168c3f397d4fe38552d55e664ca5aab
         }
 
         private void prestacionesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -132,10 +135,7 @@ namespace CapaDiseño
 
         private void liquidacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 chld = new Form1();
-            chld.MdiParent = this;
-            chld.StartPosition = FormStartPosition.CenterScreen;
-            chld.Show();
+                
         }
 
         private void nominasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -219,5 +219,25 @@ namespace CapaDiseño
             Usuario user = new Usuario();
             lbl_user.Text = user.obtenerUsuario();
         }
+<<<<<<< HEAD
+=======
+
+        private void maestroPercepcionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 chld = new Form2();
+            chld.MdiParent = this;
+            chld.StartPosition = FormStartPosition.CenterScreen;
+            chld.Show();
+        }
+
+        private void cambioPercepcionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 chld = new Form1();
+            chld.MdiParent = this;
+            chld.StartPosition = FormStartPosition.CenterScreen;
+            chld.Show();
+
+        }
+>>>>>>> bc2179b49168c3f397d4fe38552d55e664ca5aab
     }
 }
