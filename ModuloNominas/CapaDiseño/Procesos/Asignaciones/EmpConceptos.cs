@@ -133,5 +133,60 @@ namespace CapaDiseño
         {
             
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                foreach (DataGridViewRow row in dtConceptos.Rows)
+                {
+                    row.Selected = false;
+                }
+            }
+
+            if (checkBox5.Checked == true)
+            {
+                checkBox6.Checked = false;
+                string value = textBox1.Text;
+                foreach (DataGridViewRow row in dtConceptos.Rows)
+                {
+                    if (row.Cells["Tipo"].Value.Equals(value))
+                    {
+                        row.Selected = true;
+                    }
+                }
+            }
+            else
+            {
+                if (checkBox6.Checked == true)
+                {
+                    checkBox5.Checked = false;
+                    string value = textBox1.Text;
+                    foreach (DataGridViewRow row in dtConceptos.Rows)
+                    {
+                        if (row.Cells["Nombre"].Value.Equals(value))
+                        {
+                            row.Selected = true;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox6.Checked == true)
+            {
+                checkBox5.Checked = false;
+            }
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox5.Checked == true)
+            {
+                checkBox6.Checked = false;
+            }
+        }
     }
 }

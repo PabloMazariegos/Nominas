@@ -34,6 +34,8 @@ namespace CapaLogicaNominas
             cnx.cnxClose();
             return conceptosEmpleados;
         }
+        
+
 
         //Devuelve un query para eliminar los conceptos de un empleado en especifico
         public string GetQueryDelete(int id_empleado, List<int> conceptos)
@@ -49,6 +51,26 @@ namespace CapaLogicaNominas
             return query2;
         }
 
+        public string GetQueryDeleteMultiple(List<int> empleados, List<int> conceptos)
+        {
+            string query = "";
+            string query2 = "";
+            foreach (var emp in empleados)
+            {
+                foreach(var concp in conceptos)
+                {
+                    query += "(" + emp + "," + concp + "),"; //concatena a un string el ID del empleado con los conceptos que se seleccionaron para eliminarlos
+                }
+            }
+            string queryFix = query.Remove(query.Length - 1, 1);
+            query2 = "DELETE FROM tbl_empleadoconcepto WHERE (tbl_empleadoconcepto.ID_Empleado, tbl_empleadoconcepto.ID_ConceptosR) IN (" + queryFix + ")";
+            return query2;
+        }
+
+
+
+
+
         //Devuelve un query de todos los empleados, se utilizo una vista para
         //mostrar el nombre del area, puesto y contrato en lugar de solo mostrar el ID
         public string GetQueryEmpSelected(List<int> id_empleados)
@@ -61,6 +83,11 @@ namespace CapaLogicaNominas
             string queryFix = query.Remove(query.Length - 6, 6);
             return queryFix;
         }
+
+
+
+
+
 
         //devuelve un query para insertar conceptos a los empleados que se seleccionaron
         // 1- Primero busca si el empleado que se selecciono tiene conceptos asignados
@@ -75,6 +102,7 @@ namespace CapaLogicaNominas
             string queryInsert = "";
             List<string> comb_Exist = new List<string>();
             OdbcDataReader dtr;
+
             //encontrando los empleados que ya tienen conceptos asignados para no volver a insertar los mismos datos
             foreach(var empleado in id_empleados)
             {
@@ -86,8 +114,7 @@ namespace CapaLogicaNominas
                     comb_Exist.Add("(" + dtr.GetString(0) + "," + dtr.GetString(1) + "),"); //lista de todos los conceptos que tienen asignados los empleados seleccionados
                 }
                 cnx.cnxClose();
-            }
-            
+            }            
 
             foreach (var concepto in id_conceptos)
             {
@@ -113,7 +140,6 @@ namespace CapaLogicaNominas
                 }
                 
             }
-
             if (queryFix != "")
             {
                  queryInsert= "INSERT INTO tbl_empleadoconcepto VALUES" + queryFix;

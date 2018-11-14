@@ -30,6 +30,8 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.chk_excepcion = new System.Windows.Forms.CheckBox();
             this.chk_todos = new System.Windows.Forms.CheckBox();
@@ -44,13 +46,10 @@
             this.groupEmpleado = new System.Windows.Forms.GroupBox();
             this.dtEmpleados = new System.Windows.Forms.DataGridView();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupArea.SuspendLayout();
@@ -79,6 +78,34 @@
             this.label5.Size = new System.Drawing.Size(272, 23);
             this.label5.TabIndex = 3;
             this.label5.Text = "3200- AsignacionConceptos";
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(135)))), ((int)(((byte)(96)))));
+            this.button2.Image = global::CapaDiseño.Properties.Resources.Cancelar2;
+            this.button2.Location = new System.Drawing.Point(875, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(40, 36);
+            this.button2.TabIndex = 1;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(135)))), ((int)(((byte)(96)))));
+            this.button3.Image = global::CapaDiseño.Properties.Resources.minimize;
+            this.button3.Location = new System.Drawing.Point(839, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(40, 36);
+            this.button3.TabIndex = 0;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox1
             // 
@@ -208,7 +235,6 @@
             // 
             this.groupEmpleado.Controls.Add(this.dtEmpleados);
             this.groupEmpleado.Controls.Add(this.checkBox6);
-            this.groupEmpleado.Controls.Add(this.checkBox5);
             this.groupEmpleado.Controls.Add(this.checkBox4);
             this.groupEmpleado.Controls.Add(this.textBox1);
             this.groupEmpleado.Enabled = false;
@@ -228,27 +254,19 @@
             this.dtEmpleados.Size = new System.Drawing.Size(870, 194);
             this.dtEmpleados.TabIndex = 7;
             this.dtEmpleados.Visible = false;
-            this.dtEmpleados.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtEmpleados_CellDoubleClick);
+            this.dtEmpleados.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtEmpleados_CellContentDoubleClick);
+            this.dtEmpleados.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtEmpleados_CellDoubleClick_1);
             // 
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(311, 60);
+            this.checkBox6.Location = new System.Drawing.Point(162, 60);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(115, 17);
             this.checkBox6.TabIndex = 6;
             this.checkBox6.Text = "Buscar por nombre";
             this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(172, 60);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(94, 17);
-            this.checkBox5.TabIndex = 5;
-            this.checkBox5.Text = "Buscar por dpi";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -259,6 +277,7 @@
             this.checkBox4.TabIndex = 4;
             this.checkBox4.Text = "Buscar por area";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // textBox1
             // 
@@ -266,6 +285,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(398, 20);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // button4
             // 
@@ -291,34 +311,6 @@
             this.button1.Text = "Cancelar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(135)))), ((int)(((byte)(96)))));
-            this.button2.Image = global::CapaDiseño.Properties.Resources.Cancelar2;
-            this.button2.Location = new System.Drawing.Point(875, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 36);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(135)))), ((int)(((byte)(96)))));
-            this.button3.Image = global::CapaDiseño.Properties.Resources.minimize;
-            this.button3.Location = new System.Drawing.Point(839, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(40, 36);
-            this.button3.TabIndex = 0;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // AsigAreas
             // 
@@ -367,7 +359,6 @@
         private System.Windows.Forms.GroupBox groupEmpleado;
         private System.Windows.Forms.DataGridView dtEmpleados;
         private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;

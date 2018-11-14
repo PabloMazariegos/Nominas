@@ -15,6 +15,9 @@ namespace CapaDiseño
     public partial class AsigAreas : Form
     {
         ConexionCapaDatos cnx = new ConexionCapaDatos();
+        DataSet dst2 = new DataSet();
+        DataView DataView = new DataView();
+        DataSet dataset = new DataSet();
         public AsigAreas()
         {
             InitializeComponent();
@@ -33,7 +36,7 @@ namespace CapaDiseño
             cnx.cnxClose();
 
             OdbcDataAdapter emp = new OdbcDataAdapter("SELECT * FROM empleadoConceptoVW", cnx.cnxOpen());
-            DataSet dst2 = new DataSet();
+           
             dst2.Tables.Add("tbl_empleados");
             dst2.Tables["tbl_empleados"].Columns.Add("Seleccion", typeof(bool));
             dst2.Tables["tbl_empleados"].Columns["Seleccion"].DefaultValue = false;
@@ -42,6 +45,7 @@ namespace CapaDiseño
             dtEmpleados.AllowUserToAddRows = false;
             dtEmpleados.Refresh();
             cnx.cnxClose();
+            dtEmpleados.Columns["Seleccion"].SortMode = DataGridViewColumnSortMode.Automatic;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -224,6 +228,75 @@ namespace CapaDiseño
             int DPI = Convert.ToInt32(dtEmpleados.CurrentRow.Cells["DPI"].Value);
             EmpConceptos emp = new EmpConceptos(DPI);
             emp.Show();
+        }
+
+
+
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                foreach (DataGridViewRow row in dtEmpleados.Rows)
+                {
+                    row.Selected = false;
+                }
+            }
+            if (checkBox6.Checked == true)
+            {
+                checkBox4.Checked = false;
+                string value = textBox1.Text;
+                foreach(DataGridViewRow row in dtEmpleados.Rows)
+                {
+                    if (row.Cells["Nombre"].Value.Equals(value))
+                    {
+                        row.Selected = true;
+                    }
+                }
+            }else
+            {
+                if (checkBox4.Checked == true)
+                {
+                    checkBox6.Checked = false;
+                    string value = textBox1.Text;
+                    foreach (DataGridViewRow row in dtEmpleados.Rows)
+                    {
+                        if (row.Cells["Area"].Value.Equals(value))
+                        {
+                            row.Selected = true;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        private void dtEmpleados_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dtEmpleados_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int dpiSelected = Convert.ToInt32(dtEmpleados.CurrentRow.Cells["DPI"].Value);
+            EmpConceptos fm = new EmpConceptos(dpiSelected);
+            fm.Show();
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox4.Checked == true)
+            {
+                checkBox6.Checked = false;
+            }
+        }
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox6.Checked == true)
+            {
+                checkBox4.Checked = false;
+            }
         }
     }
 }

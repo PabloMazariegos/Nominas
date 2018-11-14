@@ -133,6 +133,7 @@
             this.checkBox6.TabIndex = 6;
             this.checkBox6.Text = "Buscar por nombre";
             this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -143,6 +144,7 @@
             this.checkBox5.TabIndex = 5;
             this.checkBox5.Text = "Buscar por tipo";
             this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // textBox1
             // 
@@ -150,18 +152,20 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(398, 20);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
             this.button1.Image = global::CapaDiseño.Properties.Resources.Cancelar;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(473, 580);
+            this.button1.Location = new System.Drawing.Point(479, 580);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 58);
             this.button1.TabIndex = 32;
-            this.button1.Text = "Cancelar";
+            this.button1.Text = "Borrar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -171,7 +175,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 58);
             this.button4.TabIndex = 33;
-            this.button4.Text = "Confirmar";
+            this.button4.Text = "Asignar";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
