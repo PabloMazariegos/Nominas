@@ -346,7 +346,11 @@
             this.cambioPercepcionToolStripMenuItem});
             this.liquidacionToolStripMenuItem.Name = "liquidacionToolStripMenuItem";
             this.liquidacionToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+<<<<<<< HEAD
+            this.liquidacionToolStripMenuItem.Text = "Percepciones";
+=======
             this.liquidacionToolStripMenuItem.Text = "Percepcion";
+>>>>>>> bc2179b49168c3f397d4fe38552d55e664ca5aab
             this.liquidacionToolStripMenuItem.Click += new System.EventHandler(this.liquidacionToolStripMenuItem_Click);
             // 
             // maestroPercepcionToolStripMenuItem

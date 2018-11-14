@@ -10,8 +10,6 @@ using System.Windows.Forms;
 using CapaDiseño.Procesos;
 using CapaDiseño.Procesos.Liquidacion;
 using InicioSesion;
-using BIT;
-using Data;
 
 namespace CapaDiseño
 {
@@ -26,7 +24,6 @@ namespace CapaDiseño
         private void MDI_Load(object sender, EventArgs e)
         {
             MdiClient mdi;
-            
             foreach (Control ctl in this.Controls)
             {
                 try
@@ -48,8 +45,10 @@ namespace CapaDiseño
             login.ShowDialog();
             Usuario user = new Usuario();
             lbl_user.Text = user.obtenerUsuario();
-            BIT.graphicLayer bit = new graphicLayer();
-            bit.Accion("inicio de sesion de usuario:"+user.obtenerUsuario(), "Inicio Sesion");
+<<<<<<< HEAD
+
+=======
+>>>>>>> bc2179b49168c3f397d4fe38552d55e664ca5aab
         }
 
         private void prestacionesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -220,6 +219,8 @@ namespace CapaDiseño
             Usuario user = new Usuario();
             lbl_user.Text = user.obtenerUsuario();
         }
+<<<<<<< HEAD
+=======
 
         private void maestroPercepcionToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -237,12 +238,6 @@ namespace CapaDiseño
             chld.Show();
 
         }
-
-        private void bitacoraToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            BIT.frmBitacora a = new frmBitacora();
-            a.ShowDialog();
-            
-        }
+>>>>>>> bc2179b49168c3f397d4fe38552d55e664ca5aab
     }
 }
