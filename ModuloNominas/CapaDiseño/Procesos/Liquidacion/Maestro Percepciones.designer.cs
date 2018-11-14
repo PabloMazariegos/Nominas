@@ -30,6 +30,12 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Conceptos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.percepcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -44,12 +50,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Conceptos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.percepcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -82,6 +82,36 @@
             this.dataGridView1.RowHeadersWidth = 45;
             this.dataGridView1.Size = new System.Drawing.Size(650, 179);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo Empleado";
+            this.Codigo.Name = "Codigo";
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            // 
+            // sala
+            // 
+            this.sala.HeaderText = "Salario";
+            this.sala.Name = "sala";
+            // 
+            // Conceptos
+            // 
+            this.Conceptos.HeaderText = "Conceptos";
+            this.Conceptos.Name = "Conceptos";
+            // 
+            // HH
+            // 
+            this.HH.HeaderText = "HH";
+            this.HH.Name = "HH";
+            // 
+            // percepcion
+            // 
+            this.percepcion.HeaderText = "Percepcion Total";
+            this.percepcion.Name = "percepcion";
             // 
             // panel1
             // 
@@ -239,36 +269,6 @@
             this.button5.TabIndex = 0;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // Codigo
-            // 
-            this.Codigo.HeaderText = "Codigo Empleado";
-            this.Codigo.Name = "Codigo";
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            // 
-            // sala
-            // 
-            this.sala.HeaderText = "Salario";
-            this.sala.Name = "sala";
-            // 
-            // Conceptos
-            // 
-            this.Conceptos.HeaderText = "Conceptos";
-            this.Conceptos.Name = "Conceptos";
-            // 
-            // HH
-            // 
-            this.HH.HeaderText = "HH";
-            this.HH.Name = "HH";
-            // 
-            // percepcion
-            // 
-            this.percepcion.HeaderText = "Percepcion Total";
-            this.percepcion.Name = "percepcion";
             // 
             // Form2
             // 

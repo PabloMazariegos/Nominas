@@ -23,7 +23,7 @@ namespace CapaDiseño.Procesos.Liquidacion
         public string[] idemp = new string[1024];
         public double dias;
         public string mes, año, idper;
-        public int x = 1, contaux;
+        public int x = 1, contaux,mesi; 
         public double diai;
         public int contadorID=0;
 
@@ -49,7 +49,7 @@ namespace CapaDiseño.Procesos.Liquidacion
             string cadena;
             int fechaI;
             int fechaF;
-            int mesi;
+            
             int añoi;
             string aux;
                     
@@ -113,7 +113,7 @@ namespace CapaDiseño.Procesos.Liquidacion
                     {
                         string cadena;
                         string auxi;
-                        double saldo;
+                        double saldo,sueldoM=0, sueldoD = 0;
                         string result;
                        
                         
@@ -134,8 +134,72 @@ namespace CapaDiseño.Procesos.Liquidacion
                          {
                                     aux[w] = leer.GetString(1);
                                     saldo = double.Parse(aux[w]);
-                                    sueldo[w] += saldo;
-                                
+                                switch (mesi)
+                                {
+                                    case (1):
+                                        sueldoM = (sueldo[w] / 31);
+                                        sueldoD = (sueldoM * dias);
+                                        sueldo[w] = sueldoD;
+                                        break;
+                                    case (2):
+                                        sueldoM = (sueldo[w] / 28);
+                                        sueldoD = (sueldoM * dias);
+                                        sueldo[w] = sueldoD;
+                                        break;
+                                    case (3):
+                                        sueldoM = (sueldo[w] / 31);
+                                        sueldoD = (sueldoM * dias);
+                                        sueldo[w] = sueldoD;
+                                        break;
+                                    case (4):
+                                        sueldoM = (sueldo[w] / 30);
+                                        sueldoD = (sueldoM * dias);
+                                        sueldo[w] = sueldoD;
+                                        break;
+                                    case (5):
+                                        sueldoM = (sueldo[w] / 31);
+                                        sueldoD = (sueldoM * dias);
+                                        sueldo[w] = sueldoD;
+                                        break;
+                                    case (6):
+                                        sueldoM = (sueldo[w] / 30);
+                                        sueldoD = (sueldoM * dias);
+                                        sueldo[w] = sueldoD;
+                                        break;
+                                    case (7):
+                                        sueldoM = (sueldo[w] / 31);
+                                        sueldoD = (sueldoM * dias);
+                                        sueldo[w] = sueldoD;
+                                        break;
+                                    case (8):
+                                        sueldoM = (sueldo[w] / 31);
+                                        sueldoD = (sueldoM * dias);
+                                        sueldo[w] = sueldoD;
+                                        break;
+                                    case (9):
+                                        sueldoM = (sueldo[w] / 30);
+                                        sueldoD = (sueldoM * dias);
+                                        sueldo[w] = sueldoD;
+                                        break;
+
+                                    case (10):
+                                        sueldoM = (sueldo[w] / 31);
+                                        sueldoD = (sueldoM * dias);
+                                        sueldo[w] = sueldoD;
+                                        break;
+                                    case (11):
+                                        sueldoM = (sueldo[w] / 30);
+                                        sueldoD = (sueldoM * dias);
+                                        sueldo[w] = sueldoD;
+                                        break;
+                                    case (12):
+                                        sueldoM = (sueldo[w] / 31);
+                                        sueldoD = (sueldoM * dias);
+                                        sueldo[w] = sueldoD;
+                                        break;
+                                }
+                                sueldo[w] += saldo;
+
 
                             }
                         }
@@ -220,12 +284,15 @@ namespace CapaDiseño.Procesos.Liquidacion
                                 string cadena = "INSERT INTO Percepciones values(" + "\"" +
                                                 mes + "-" + año + "\"" + " ," +
                                                 idemp[y] + "," +
-                                                sueldo[y] + "," +
+                                                result + "," +
                                                 dias + ");";
+                                MessageBox.Show(cadena);
                                 ConexionCapaDatos cone = new ConexionCapaDatos();
                                 OdbcCommand cmd = new OdbcCommand(cadena, cone.cnxOpen());
                                 cmd.ExecuteNonQuery();
                                 cone.cnxClose();
+                                idemp[y] = "";
+                                sueldo[y] =0;
                                 cadena = "";
                             }
                             MessageBox.Show("Percepciones guardadas con exito");
