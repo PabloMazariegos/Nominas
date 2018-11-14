@@ -50,7 +50,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txt_descripcion = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.navegador1 = new CapaDiseno.Navegador();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -58,6 +57,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.cbx_areas = new System.Windows.Forms.ComboBox();
             this.lbl_nombreArea = new System.Windows.Forms.Label();
+            this.navegador1 = new CapaDiseno.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dt_puestos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dt_ConceptosRetributivos)).BeginInit();
             this.panel2.SuspendLayout();
@@ -253,20 +253,6 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "Descripcion: ";
             // 
-            // navegador1
-            // 
-            this.navegador1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.navegador1.DataGr = this.dt_puestos;
-            this.navegador1.Forma = this;
-            this.navegador1.Location = new System.Drawing.Point(33, 48);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Procedimiento = null;
-            this.navegador1.pubNombrechm = "Mantenimientos.chm";
-            this.navegador1.pubNombreHtml = "Puestos.html";
-            this.navegador1.Size = new System.Drawing.Size(857, 60);
-            this.navegador1.TabIndex = 14;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(135)))), ((int)(((byte)(96)))));
@@ -353,16 +339,28 @@
             this.lbl_nombreArea.Size = new System.Drawing.Size(0, 13);
             this.lbl_nombreArea.TabIndex = 32;
             // 
+            // navegador1
+            // 
+            this.navegador1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.navegador1.DataGr = this.dt_puestos;
+            this.navegador1.Location = new System.Drawing.Point(33, 48);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Procedimiento = null;
+            this.navegador1.pubNombrechm = "Mantenimientos.chm";
+            this.navegador1.pubNombreHtml = "Puestos.html";
+            this.navegador1.Size = new System.Drawing.Size(857, 60);
+            this.navegador1.TabIndex = 33;
+            // 
             // ManPuestos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 661);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.lbl_nombreArea);
             this.Controls.Add(this.cbx_areas);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.txt_descripcion);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txt_nombre);
@@ -403,7 +401,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_descripcion;
         private System.Windows.Forms.Label label9;
-        private CapaDiseno.Navegador navegador1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button4;
@@ -411,5 +408,6 @@
         private System.Windows.Forms.Label lbl_nombreArea;
         private System.Windows.Forms.ComboBox cbx_areas;
         private System.Windows.Forms.Label label10;
+        private CapaDiseno.Navegador navegador1;
     }
 }

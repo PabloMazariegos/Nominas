@@ -33,30 +33,41 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaDatos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Desktop\Navegador\CapaDatos\obj\Debug\CapaDatos.dll</HintPath>
+    <Reference Include="BIT">
+      <HintPath>..\..\..\..\..\..\..\..\..\BIT\BIT\bin\Debug\BIT.dll</HintPath>
     </Reference>
-    <Reference Include="CapaDatosInicioSesion">
-      <HintPath>..\..\..\..\..\..\..\..\..\CapaDatosInicioSesion.dll</HintPath>
-    </Reference>
+    <Reference Include="CapaDatos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="CapaDatosInicioSesion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="CapaDatosNominas, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CapaDatos\bin\Debug\CapaDatosNominas.dll</HintPath>
     </Reference>
     <Reference Include="CapaDiseno, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Desktop\Navegador\CapaDiseno\obj\Debug\CapaDiseno.dll</HintPath>
+      <HintPath>bin\Debug\CapaDiseno.dll</HintPath>
     </Reference>
-    <Reference Include="CapaLogica, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="CapaLogica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="CapaLogicaInicioSesion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Desktop\Navegador\CapaLogica\obj\Debug\CapaLogica.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\DLL-inicio-de-sesion-master\CapaLogica\bin\Debug\CapaLogicaInicioSesion.dll</HintPath>
     </Reference>
-    <Reference Include="CapaLogicaInicioSesion">
-      <HintPath>..\..\..\..\..\..\..\..\..\CapaLogicaInicioSesion.dll</HintPath>
+    <Reference Include="CapaLogicaNominas">
+      <HintPath>..\CapaLogica\bin\Debug\CapaLogicaNominas.dll</HintPath>
     </Reference>
-    <Reference Include="InicioSesion">
-      <HintPath>..\..\..\..\..\..\..\..\..\InicioSesion.dll</HintPath>
+    <Reference Include="ConsultasInteligentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Data">
+      <HintPath>..\..\..\..\..\..\..\..\..\BIT\BIT\bin\Debug\Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DLL- Reporteador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\DLLs\Navegador\CapaDiseno\bin\Debug\DLL- Reporteador.dll</HintPath>
+    </Reference>
+    <Reference Include="InicioSesion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\DLL-inicio-de-sesion-master\InicioSesion\bin\Debug\InicioSesion.dll</HintPath>
+    </Reference>
+    <Reference Include="Logic">
+      <HintPath>..\..\..\..\..\..\..\..\..\BIT\BIT\bin\Debug\Logic.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -76,6 +87,18 @@
     </Compile>
     <Compile Include="Catalogos\CatAreas.Designer.cs">
       <DependentUpon>CatAreas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Asignaciones\EmpConceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Asignaciones\EmpConceptos.designer.cs">
+      <DependentUpon>EmpConceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Asignaciones\AsigConcepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Asignaciones\AsigConcepto.designer.cs">
+      <DependentUpon>AsigConcepto.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\Liquidacion\Maestro Percepciones.cs">
       <SubType>Form</SubType>
@@ -192,6 +215,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Catalogos\CatPrestaciones.resx">
       <DependentUpon>CatPrestaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Asignaciones\EmpConceptos.resx">
+      <DependentUpon>EmpConceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Asignaciones\AsigConcepto.resx">
+      <DependentUpon>AsigConcepto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Liquidacion\Maestro Percepciones.resx">
       <DependentUpon>Maestro Percepciones.cs</DependentUpon>

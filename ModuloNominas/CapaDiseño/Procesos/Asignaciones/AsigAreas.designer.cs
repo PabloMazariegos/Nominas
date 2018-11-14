@@ -33,29 +33,28 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.chk_individual = new System.Windows.Forms.CheckBox();
-            this.chk_area = new System.Windows.Forms.CheckBox();
-            this.chk_todos = new System.Windows.Forms.CheckBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbl_nombreArea = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.chk_excepcion = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.chk_todos = new System.Windows.Forms.CheckBox();
+            this.chk_area = new System.Windows.Forms.CheckBox();
+            this.chk_individual = new System.Windows.Forms.CheckBox();
+            this.groupArea = new System.Windows.Forms.GroupBox();
+            this.lbl_decripArea = new System.Windows.Forms.Label();
+            this.lbl_nomArea = new System.Windows.Forms.Label();
+            this.lbl_codArea = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbxArea = new System.Windows.Forms.ComboBox();
+            this.groupEmpleado = new System.Windows.Forms.GroupBox();
+            this.dtEmpleados = new System.Windows.Forms.DataGridView();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupArea.SuspendLayout();
+            this.groupEmpleado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -122,25 +121,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "TIPO DE ASIGNACION";
             // 
-            // chk_individual
+            // chk_excepcion
             // 
-            this.chk_individual.AutoSize = true;
-            this.chk_individual.Location = new System.Drawing.Point(28, 32);
-            this.chk_individual.Name = "chk_individual";
-            this.chk_individual.Size = new System.Drawing.Size(78, 19);
-            this.chk_individual.TabIndex = 0;
-            this.chk_individual.Text = "Individual";
-            this.chk_individual.UseVisualStyleBackColor = true;
-            // 
-            // chk_area
-            // 
-            this.chk_area.AutoSize = true;
-            this.chk_area.Location = new System.Drawing.Point(28, 57);
-            this.chk_area.Name = "chk_area";
-            this.chk_area.Size = new System.Drawing.Size(73, 19);
-            this.chk_area.TabIndex = 1;
-            this.chk_area.Text = "Por Area";
-            this.chk_area.UseVisualStyleBackColor = true;
+            this.chk_excepcion.AutoSize = true;
+            this.chk_excepcion.Location = new System.Drawing.Point(28, 107);
+            this.chk_excepcion.Name = "chk_excepcion";
+            this.chk_excepcion.Size = new System.Drawing.Size(104, 19);
+            this.chk_excepcion.TabIndex = 31;
+            this.chk_excepcion.Text = "Por excepcion";
+            this.chk_excepcion.UseVisualStyleBackColor = true;
+            this.chk_excepcion.CheckStateChanged += new System.EventHandler(this.chk_excepcion_CheckStateChanged);
             // 
             // chk_todos
             // 
@@ -151,29 +141,77 @@
             this.chk_todos.TabIndex = 30;
             this.chk_todos.Text = "Todos los empleados";
             this.chk_todos.UseVisualStyleBackColor = true;
+            this.chk_todos.CheckedChanged += new System.EventHandler(this.chk_todos_CheckedChanged);
             // 
-            // groupBox2
+            // chk_area
             // 
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.lbl_nombreArea);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Enabled = false;
-            this.groupBox2.Location = new System.Drawing.Point(255, 67);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(641, 136);
-            this.groupBox2.TabIndex = 30;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "ASIGNACION POR AREA";
+            this.chk_area.AutoSize = true;
+            this.chk_area.Location = new System.Drawing.Point(28, 57);
+            this.chk_area.Name = "chk_area";
+            this.chk_area.Size = new System.Drawing.Size(73, 19);
+            this.chk_area.TabIndex = 1;
+            this.chk_area.Text = "Por Area";
+            this.chk_area.UseVisualStyleBackColor = true;
+            this.chk_area.CheckStateChanged += new System.EventHandler(this.chk_area_CheckStateChanged);
             // 
-            // comboBox1
+            // chk_individual
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(67, 46);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(167, 21);
-            this.comboBox1.TabIndex = 0;
+            this.chk_individual.AutoSize = true;
+            this.chk_individual.Location = new System.Drawing.Point(28, 32);
+            this.chk_individual.Name = "chk_individual";
+            this.chk_individual.Size = new System.Drawing.Size(78, 19);
+            this.chk_individual.TabIndex = 0;
+            this.chk_individual.Text = "Individual";
+            this.chk_individual.UseVisualStyleBackColor = true;
+            this.chk_individual.CheckStateChanged += new System.EventHandler(this.chk_individual_CheckStateChanged);
+            // 
+            // groupArea
+            // 
+            this.groupArea.Controls.Add(this.lbl_decripArea);
+            this.groupArea.Controls.Add(this.lbl_nomArea);
+            this.groupArea.Controls.Add(this.lbl_codArea);
+            this.groupArea.Controls.Add(this.label2);
+            this.groupArea.Controls.Add(this.cbxArea);
+            this.groupArea.Enabled = false;
+            this.groupArea.Location = new System.Drawing.Point(255, 67);
+            this.groupArea.Name = "groupArea";
+            this.groupArea.Size = new System.Drawing.Size(641, 136);
+            this.groupArea.TabIndex = 30;
+            this.groupArea.TabStop = false;
+            this.groupArea.Text = "ASIGNACION POR AREA";
+            // 
+            // lbl_decripArea
+            // 
+            this.lbl_decripArea.AutoSize = true;
+            this.lbl_decripArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_decripArea.ForeColor = System.Drawing.Color.DimGray;
+            this.lbl_decripArea.Location = new System.Drawing.Point(281, 85);
+            this.lbl_decripArea.Name = "lbl_decripArea";
+            this.lbl_decripArea.Size = new System.Drawing.Size(139, 16);
+            this.lbl_decripArea.TabIndex = 4;
+            this.lbl_decripArea.Text = "DESCRIPCION AREA";
+            // 
+            // lbl_nomArea
+            // 
+            this.lbl_nomArea.AutoSize = true;
+            this.lbl_nomArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nomArea.ForeColor = System.Drawing.Color.DimGray;
+            this.lbl_nomArea.Location = new System.Drawing.Point(281, 51);
+            this.lbl_nomArea.Name = "lbl_nomArea";
+            this.lbl_nomArea.Size = new System.Drawing.Size(107, 16);
+            this.lbl_nomArea.TabIndex = 3;
+            this.lbl_nomArea.Text = "NOMBRE AREA";
+            // 
+            // lbl_codArea
+            // 
+            this.lbl_codArea.AutoSize = true;
+            this.lbl_codArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_codArea.ForeColor = System.Drawing.Color.DimGray;
+            this.lbl_codArea.Location = new System.Drawing.Point(281, 16);
+            this.lbl_codArea.Name = "lbl_codArea";
+            this.lbl_codArea.Size = new System.Drawing.Size(100, 16);
+            this.lbl_codArea.TabIndex = 2;
+            this.lbl_codArea.Text = "CODIGO AREA";
             // 
             // label2
             // 
@@ -184,80 +222,51 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Area:";
             // 
-            // lbl_nombreArea
+            // cbxArea
             // 
-            this.lbl_nombreArea.AutoSize = true;
-            this.lbl_nombreArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nombreArea.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl_nombreArea.Location = new System.Drawing.Point(281, 16);
-            this.lbl_nombreArea.Name = "lbl_nombreArea";
-            this.lbl_nombreArea.Size = new System.Drawing.Size(100, 16);
-            this.lbl_nombreArea.TabIndex = 2;
-            this.lbl_nombreArea.Text = "CODIGO AREA";
+            this.cbxArea.FormattingEnabled = true;
+            this.cbxArea.Location = new System.Drawing.Point(67, 46);
+            this.cbxArea.Name = "cbxArea";
+            this.cbxArea.Size = new System.Drawing.Size(167, 21);
+            this.cbxArea.TabIndex = 0;
+            this.cbxArea.SelectedIndexChanged += new System.EventHandler(this.cbxArea_SelectedIndexChanged);
             // 
-            // groupBox3
+            // groupEmpleado
             // 
-            this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Controls.Add(this.checkBox6);
-            this.groupBox3.Controls.Add(this.checkBox5);
-            this.groupBox3.Controls.Add(this.checkBox4);
-            this.groupBox3.Controls.Add(this.textBox1);
-            this.groupBox3.Enabled = false;
-            this.groupBox3.Location = new System.Drawing.Point(26, 224);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(870, 294);
-            this.groupBox3.TabIndex = 31;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "ASIGNACION POR EMPLEADO";
+            this.groupEmpleado.Controls.Add(this.dtEmpleados);
+            this.groupEmpleado.Controls.Add(this.checkBox6);
+            this.groupEmpleado.Controls.Add(this.checkBox4);
+            this.groupEmpleado.Controls.Add(this.textBox1);
+            this.groupEmpleado.Enabled = false;
+            this.groupEmpleado.Location = new System.Drawing.Point(26, 224);
+            this.groupEmpleado.Name = "groupEmpleado";
+            this.groupEmpleado.Size = new System.Drawing.Size(870, 294);
+            this.groupEmpleado.TabIndex = 31;
+            this.groupEmpleado.TabStop = false;
+            this.groupEmpleado.Text = "ASIGNACION POR EMPLEADO";
             // 
-            // label1
+            // dtEmpleados
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(281, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 16);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "NOMBRE AREA";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(281, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "DESCRIPCION AREA";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(28, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(398, 20);
-            this.textBox1.TabIndex = 3;
+            this.dtEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtEmpleados.Location = new System.Drawing.Point(0, 94);
+            this.dtEmpleados.Name = "dtEmpleados";
+            this.dtEmpleados.Size = new System.Drawing.Size(870, 194);
+            this.dtEmpleados.TabIndex = 7;
+            this.dtEmpleados.Visible = false;
+            this.dtEmpleados.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtEmpleados_CellContentDoubleClick);
+            this.dtEmpleados.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtEmpleados_CellDoubleClick_1);
             // 
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(311, 60);
+            this.checkBox6.Location = new System.Drawing.Point(162, 60);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(115, 17);
             this.checkBox6.TabIndex = 6;
             this.checkBox6.Text = "Buscar por nombre";
             this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(172, 60);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(94, 17);
-            this.checkBox5.TabIndex = 5;
-            this.checkBox5.Text = "Buscar por dpi";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -268,24 +277,28 @@
             this.checkBox4.TabIndex = 4;
             this.checkBox4.Text = "Buscar por area";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
-            // dataGridView1
+            // textBox1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 94);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(870, 194);
-            this.dataGridView1.TabIndex = 7;
+            this.textBox1.Location = new System.Drawing.Point(28, 34);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(398, 20);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
-            // chk_excepcion
+            // button4
             // 
-            this.chk_excepcion.AutoSize = true;
-            this.chk_excepcion.Location = new System.Drawing.Point(28, 107);
-            this.chk_excepcion.Name = "chk_excepcion";
-            this.chk_excepcion.Size = new System.Drawing.Size(104, 19);
-            this.chk_excepcion.TabIndex = 31;
-            this.chk_excepcion.Text = "Por excepcion";
-            this.chk_excepcion.UseVisualStyleBackColor = true;
+            this.button4.Image = global::CapaDiseño.Properties.Resources.aceptar;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.Location = new System.Drawing.Point(351, 539);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 58);
+            this.button4.TabIndex = 33;
+            this.button4.Text = "Confirmar";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button1
             // 
@@ -299,18 +312,6 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button4
-            // 
-            this.button4.Image = global::CapaDiseño.Properties.Resources.aceptar;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(351, 539);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 58);
-            this.button4.TabIndex = 33;
-            this.button4.Text = "Confirmar";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // AsigAreas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,8 +319,8 @@
             this.ClientSize = new System.Drawing.Size(917, 661);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupEmpleado);
+            this.Controls.Add(this.groupArea);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -330,11 +331,11 @@
             this.panel2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupArea.ResumeLayout(false);
+            this.groupArea.PerformLayout();
+            this.groupEmpleado.ResumeLayout(false);
+            this.groupEmpleado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtEmpleados)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -349,16 +350,15 @@
         private System.Windows.Forms.CheckBox chk_area;
         private System.Windows.Forms.CheckBox chk_individual;
         private System.Windows.Forms.CheckBox chk_excepcion;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbl_nombreArea;
+        private System.Windows.Forms.GroupBox groupArea;
+        private System.Windows.Forms.Label lbl_decripArea;
+        private System.Windows.Forms.Label lbl_nomArea;
+        private System.Windows.Forms.Label lbl_codArea;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cbxArea;
+        private System.Windows.Forms.GroupBox groupEmpleado;
+        private System.Windows.Forms.DataGridView dtEmpleados;
         private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;

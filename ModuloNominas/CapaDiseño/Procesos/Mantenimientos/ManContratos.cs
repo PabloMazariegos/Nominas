@@ -7,16 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CapaDiseno;
 
 namespace CapaDiseño
 {
     public partial class ManContratos : Form
     {
+        Navegador nv = new Navegador();
         public ManContratos()
         {
             InitializeComponent();
-            navegador1.ingresarTabla("contratosVW");
+            nv.nombreForm(this);
+            nv.ingresarTabla("contratosVW");
+            nv.NumeroAplicacion("3104");
+
+
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -66,6 +72,17 @@ namespace CapaDiseño
             {
                 e.Handled = true;
             }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+            textBox1.Text = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            dateTimePicker1.Text = textBox1.Text;
         }
     }
 }
