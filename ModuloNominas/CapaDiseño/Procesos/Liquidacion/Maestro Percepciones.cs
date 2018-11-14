@@ -286,7 +286,6 @@ namespace CapaDiseño.Procesos.Liquidacion
                                                 idemp[y] + "," +
                                                 result + "," +
                                                 dias + ");";
-                                MessageBox.Show(cadena);
                                 ConexionCapaDatos cone = new ConexionCapaDatos();
                                 OdbcCommand cmd = new OdbcCommand(cadena, cone.cnxOpen());
                                 cmd.ExecuteNonQuery();
