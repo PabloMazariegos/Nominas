@@ -88,8 +88,8 @@ namespace CapaDiseño.Procesos.Liquidacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 llama = new Form3();
-            llama.Show();
+           /* Form3 llama = new Form3();
+            llama.Show();*/
         }
 
         private void button3_Click(object sender, EventArgs e)
