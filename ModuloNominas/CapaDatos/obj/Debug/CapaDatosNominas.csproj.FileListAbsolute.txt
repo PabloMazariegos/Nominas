@@ -4,3 +4,9 @@ C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\
 C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDatos\obj\Debug\CapaDatosNominas.pdb
 C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDatos\bin\Debug\CapaDatosNominas.dll.config
 C:\Users\Pablo\Pablo\UMG\OCTAVO CICLO\Analisis de Sistemas 2\proyecto 2\Nominas\Repo\Nominas\ModuloNominas\CapaDatos\obj\Debug\CapaDatosNominas.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDatos\bin\Debug\CapaDatosNominas.dll.config
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDatos\bin\Debug\CapaDatosNominas.dll
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDatos\bin\Debug\CapaDatosNominas.pdb
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDatos\obj\Debug\CapaDatosNominas.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDatos\obj\Debug\CapaDatosNominas.dll
+C:\Users\Kevin\Documents\GitHub\Nominas\ModuloNominas\CapaDatos\obj\Debug\CapaDatosNominas.pdb

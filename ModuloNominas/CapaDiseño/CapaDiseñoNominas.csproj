@@ -77,6 +77,18 @@
     <Compile Include="Catalogos\CatAreas.Designer.cs">
       <DependentUpon>CatAreas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\Liquidacion\Maestro Percepciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Liquidacion\Maestro Percepciones.designer.cs">
+      <DependentUpon>Maestro Percepciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Liquidacion\Percepciones empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Liquidacion\Percepciones empleado.designer.cs">
+      <DependentUpon>Percepciones empleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\Mantenimientos\ManContratos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,12 +106,6 @@
     </Compile>
     <Compile Include="Polizas.designer.cs">
       <DependentUpon>Polizas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Procesos\Liquidacion\Percepciones empleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Procesos\Liquidacion\Percepciones empleado.Designer.cs">
-      <DependentUpon>Percepciones empleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\Mantenimientos\ManEmpleados.cs">
       <SubType>Form</SubType>
@@ -187,6 +193,12 @@
     <EmbeddedResource Include="Catalogos\CatPrestaciones.resx">
       <DependentUpon>CatPrestaciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Liquidacion\Maestro Percepciones.resx">
+      <DependentUpon>Maestro Percepciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Liquidacion\Percepciones empleado.resx">
+      <DependentUpon>Percepciones empleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Mantenimientos\ManContratos.resx">
       <DependentUpon>ManContratos.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,9 +207,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Polizas.resx">
       <DependentUpon>Polizas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Procesos\Liquidacion\Percepciones empleado.resx">
-      <DependentUpon>Percepciones empleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Mantenimientos\ManEmpleados.resx">
       <DependentUpon>ManEmpleados.cs</DependentUpon>
