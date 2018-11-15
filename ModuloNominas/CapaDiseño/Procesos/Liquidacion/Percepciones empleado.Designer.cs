@@ -337,9 +337,10 @@
             this.Borrar.Name = "Borrar";
             this.Borrar.Size = new System.Drawing.Size(75, 63);
             this.Borrar.TabIndex = 33;
-            this.Borrar.Text = "Guardar";
+            this.Borrar.Text = "Borrar";
             this.Borrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Borrar.UseVisualStyleBackColor = true;
+            this.Borrar.Click += new System.EventHandler(this.Borrar_Click);
             // 
             // button7
             // 

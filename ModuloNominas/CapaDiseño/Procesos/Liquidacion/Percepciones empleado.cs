@@ -38,6 +38,7 @@ namespace CapaDiseño.Procesos.Liquidacion
 
         private void button6_Click(object sender, EventArgs e)
         {
+            
             ConexionCapaDatos cone = new ConexionCapaDatos();
             
             try
@@ -54,7 +55,8 @@ namespace CapaDiseño.Procesos.Liquidacion
                         btn1 = 0;
                         btn= 0;
                     }
-                    else { 
+                    else {
+                        ID_PER = mes +"-"+ año;
                     DataTable dt = new DataTable();
                     cadena = "SELECT  ID_Empleado, ID_Percepcion, Total, Dias FROM Percepciones" +
                        " WHERE ID_Percepcion=" + "\"" + mes + "-" + año + "\"" + ";";
@@ -88,7 +90,223 @@ namespace CapaDiseño.Procesos.Liquidacion
 
         private void button7_Click(object sender, EventArgs e)
         {
+            string auxi;
+            ConexionCapaDatos cone = new ConexionCapaDatos();
+            int contador = 1;
+            double sueldoM;
+            double sueldoD;
+            string saldo;
+            try {
+                try {
+                    int x=1;
+                    
+                    string[] vector = new string[1024];
+            string nuevo_emp =Microsoft.VisualBasic.Interaction.InputBox("Ingrese el nuevo id del empleado","Ingreso");
+                    string cadena = "select ID_Empleado from Percepciones";/* where ID_Empleado="+
+                          // nuevo_emp +" and ID_Percepcion=" +"'"+ID_PER+"'"+"; ";*/
+            
+            OdbcCommand cmd = new OdbcCommand(cadena, cone.cnxOpen());
+            OdbcDataReader leer = cmd.ExecuteReader();
+            while (leer.Read())
+            {
+                        vector[x] = leer.GetString(0);
+                        x++;
+            }
+            cone.cnxClose();
 
+                    for (int y = 1; y < x; y++)
+                    {
+                        string cadenaA = "select ID_Empleado from Percepciones where ID_Empleado=" +
+                               nuevo_emp + " and ID_Percepcion=" + "'" + ID_PER + "'" + "; ";
+                       
+                        OdbcCommand cmd1 = new OdbcCommand(cadenaA, cone.cnxOpen());
+                        OdbcDataReader leer1 = cmd1.ExecuteReader();
+                        while (leer1.Read())
+                        {
+                            if (vector[y] == nuevo_emp)
+                            {
+                                contador = 1;
+                            }
+                            else
+                            {
+                                contador = 0;
+                            }
+                        }
+                        cone.cnxClose();
+
+                    }
+                    if (contador == 1)
+                    {
+                        MessageBox.Show("EMPLEADO YA INGRESADO");
+                    }
+                    else { 
+                        string nuevo_dias = Microsoft.VisualBasic.Interaction.InputBox("Ingrese los dias", "Ingreso");
+
+                        ///////////////////
+                        int diastxt = Convert.ToInt32(nuevo_dias);
+                        string cadenaB = "SELECT tbl_empleados.ID_empleado ,tbl_empleados.nombre,tbl_contratos.salario " +
+                        "FROM tbl_empleados " +
+                        "INNER JOIN tbl_contratos ON tbl_empleados.ID_contrato = tbl_contratos.ID_contrato WHERE ID_Empleado=" + nuevo_emp + ";";
+                        MessageBox.Show(cadenaB);
+                        OdbcCommand cmd2 = new OdbcCommand(cadenaB, cone.cnxOpen());
+                        OdbcDataReader leer1 = cmd2.ExecuteReader();
+                       
+                        while (leer1.Read())
+                        {
+                            saldo = leer.GetString(2);
+                            sueldo = Convert.ToDouble(saldo);
+                            switch (mescmx)
+                            {
+                                case (1):
+                                    sueldoM = (sueldo / 31);
+                                    sueldoD = (sueldoM * diastxt);
+                                    sueldo = sueldoD + bono;
+                                    break;
+                                case (2):
+                                    sueldoM = (sueldo / 28);
+                                    sueldoD = (sueldoM * diastxt);
+                                    sueldo = sueldoD + bono;
+                                    break;
+                                case (3):
+                                    sueldoM = (sueldo / 31);
+                                    sueldoD = (sueldoM * diastxt);
+                                    sueldo = sueldoD + bono;
+                                    break;
+                                case (4):
+                                    sueldoM = (sueldo / 30);
+                                    sueldoD = (sueldoM * diastxt);
+                                    sueldo = sueldoD + bono;
+                                    break;
+                                case (5):
+                                    sueldoM = (sueldo / 31);
+                                    sueldoD = (sueldoM * diastxt);
+                                    sueldo = sueldoD + bono;
+                                    break;
+                                case (6):
+                                    sueldoM = (sueldo / 30);
+                                    sueldoD = (sueldoM * diastxt);
+                                    sueldo = sueldoD + bono;
+                                    break;
+                                case (7):
+                                    sueldoM = (sueldo / 31);
+                                    sueldoD = (sueldoM * diastxt);
+                                    sueldo = sueldoD + bono;
+                                    break;
+                                case (8):
+                                    sueldoM = (sueldo / 31);
+                                    sueldoD = (sueldoM * diastxt);
+                                    sueldo = sueldoD + bono;
+                                    break;
+                                case (9):
+                                    sueldoM = (sueldo / 30);
+                                    sueldoD = (sueldoM * diastxt);
+                                    sueldo = sueldoD + bono;
+                                    break;
+
+                                case (10):
+                                    sueldoM = (sueldo / 31);
+                                    sueldoD = (sueldoM * diastxt);
+                                    sueldo = sueldoD + bono;
+                                    break;
+                                case (11):
+                                    sueldoM = (sueldo / 30);
+                                    sueldoD = (sueldoM * diastxt);
+                                    sueldo = sueldoD + bono;
+                                    break;
+                                case (12):
+                                    sueldoM = (sueldo / 31);
+                                    sueldoD = (sueldoM * diastxt);
+                                    sueldo = sueldoD + bono;
+                                    break;
+
+                            }
+
+
+                        }
+                        auxi = String.Format("{0:0.00}", sueldo);
+                        string result = auxi.Replace(",", ".");
+                        DIA = textBox6.Text;
+                        string cadenaC = "insert into Percepciones value("+
+                            "\""+ID_PER+"\","+ID_EMP+"," +result+"," + diastxt+");";
+                        OdbcCommand cmd3 = new OdbcCommand(cadena, cone.cnxOpen());
+                        cmd.ExecuteNonQuery();
+
+                        cone.cnxClose();
+
+                        DataTable dt = new DataTable();
+                       cadena = "SELECT  ID_Empleado, ID_Percepcion, Total, Dias FROM Percepciones" +
+                           " WHERE ID_Percepcion=" + "\"" + ID_PER + "\"" + ";";
+
+                        OdbcDataAdapter dta = new OdbcDataAdapter(cadena, cone.cnxOpen());
+                        DataSet dst = new DataSet();
+                        dta.Fill(dst);
+                        dt = dst.Tables[0];
+
+                        dataGridView1.DataSource = dt;
+                        MessageBox.Show("EMPLEADO INSERTADO");
+                        cone.cnxClose();
+                        ////////////////
+
+
+                    }
+                }
+                catch (OdbcException ex)
+                {
+                    MessageBox.Show("Error en la base de datos \n" + ex);
+                    cone.cnxClose();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en la base de datos\n" + ex);
+                cone.cnxClose();
+            }
+
+        }
+
+        private void Borrar_Click(object sender, EventArgs e)
+        {
+            ConexionCapaDatos cone = new ConexionCapaDatos();
+            try {
+                try
+                {
+                    if (textBox1.Text == "")
+                    {
+                        MessageBox.Show("Debe seleccionar un Empleado primero");
+                    }
+                    else {
+                        string cadena = "DELETE FROM `Percepciones` WHERE(`ID_Percepcion` ="
+                        + "\"" + ID_PER + "\"" + " and `ID_Empleado`= " + ID_EMP + ");";
+
+                    OdbcCommand cmd = new OdbcCommand(cadena, cone.cnxOpen());
+                    cmd.ExecuteNonQuery();
+                    cone.cnxClose();
+
+                    DataTable dt = new DataTable();
+                    string cadenaA = "SELECT  ID_Empleado, ID_Percepcion, Total, Dias FROM Percepciones" +
+                       " WHERE ID_Percepcion=" + "\"" + ID_PER + "\"" + ";";
+
+                    OdbcDataAdapter dta = new OdbcDataAdapter(cadenaA, cone.cnxOpen());
+                    DataSet dst = new DataSet();
+                    dta.Fill(dst);
+                    dt = dst.Tables[0];
+
+                    dataGridView1.DataSource = dt;
+                    MessageBox.Show("Se ha borrado el usuario");
+                    cone.cnxClose();
+                    }
+                }
+                catch (OdbcException ex)
+                {
+                    MessageBox.Show("Error en la base de datos \n" + ex);
+                    cone.cnxClose();
+                }
+}
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en la base de datos\n" + ex);
+                cone.cnxClose();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
