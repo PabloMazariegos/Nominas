@@ -22,27 +22,27 @@ namespace CapaDiseño
         public RepCierre()
         {
             InitializeComponent();
-            OdbcConnection cnx = new OdbcConnection("Dsn=colchoneria");
-            cnx.Open();
+            OdbcConnection cnx = new OdbcConnection("Dsn=colchoneria"); /*objeot de la conexion*/
+            cnx.Open(); /*abriendo conexion*/
 
-            string query = ("SELECT tbl_empleados.ID_Empleado, tbl_empleados.Nombre, tbl_puestos.Nombre as 'Puesto', tbl_areas.Nombre as 'Area', tbl_contratos.fechaInicio, tbl_contratos.salario from tbl_empleados inner join tbl_puestos on tbl_empleados.ID_Puesto = tbl_puestos.ID_Puesto inner join tbl_areas on tbl_empleados.ID_Area = tbl_areas.ID_Area inner join tbl_contratos on tbl_empleados.ID_Contrato = tbl_contratos.ID_Contrato; ");
+            string query = ("SELECT tbl_empleados.ID_Empleado, tbl_empleados.Nombre, tbl_puestos.Nombre as 'Puesto', tbl_areas.Nombre as 'Area', tbl_contratos.fechaInicio, tbl_contratos.salario from tbl_empleados inner join tbl_puestos on tbl_empleados.ID_Puesto = tbl_puestos.ID_Puesto inner join tbl_areas on tbl_empleados.ID_Area = tbl_areas.ID_Area inner join tbl_contratos on tbl_empleados.ID_Contrato = tbl_contratos.ID_Contrato; "); /*consulta a la base de datos*/
 
-            OdbcCommand cmd = new OdbcCommand(query, cnx);
-            OdbcDataAdapter adt = new OdbcDataAdapter();
-            DataTable tbl = new DataTable();
-            adt.SelectCommand = cmd;
+            OdbcCommand cmd = new OdbcCommand(query, cnx); /*envia de consulta*/
+            OdbcDataAdapter adt = new OdbcDataAdapter(); 
+            DataTable tbl = new DataTable();/*nueva tabla*/
+            adt.SelectCommand = cmd; /*adaptando al cmd*/
 
-            adt.Fill(tbl);
-            cnx.Close();
+            adt.Fill(tbl); /*llenar talba*/
+            cnx.Close(); /*cerrar conexion*/
 
-            DataSet ds = new DataSet();
-            ds.Tables.Add("pruebareporte2");
-            ds.Tables[0].Merge(tbl);
-            ReportDocument rpt = new ReportDocument();
-            rpt.Load(@"C:\Users\Richie\Desktop\UMG\8vo Ciclo\Analisis de sistemas II\Nominas\Nominas\ModuloNominas\CapaDiseño\ReporteGeneral.rpt");
-            rpt.SetDataSource(ds);
-            crystalReportViewer1.ReportSource = rpt;
-            crystalReportViewer1.Refresh();
+            DataSet ds = new DataSet(); /*creacion del data set*/
+            ds.Tables.Add("pruebareporte2"); /*agregar a la tabla*/
+            ds.Tables[0].Merge(tbl); /*pusear a la tabla*/
+            ReportDocument rpt = new ReportDocument(); /*creacion del reporte*/
+            rpt.Load(@"C:\Users\Richie\Desktop\UMG\8vo Ciclo\Analisis de sistemas II\Nominas\Nominas\ModuloNominas\CapaDiseño\ReporteGeneral.rpt"); /*ubicacion del reporte*/
+            rpt.SetDataSource(ds); /*carga de reporte*/
+            crystalReportViewer1.ReportSource = rpt; /*envio a la vista del reporte*/
+            crystalReportViewer1.Refresh(); /*refrescar reporte*/
 
 
         }

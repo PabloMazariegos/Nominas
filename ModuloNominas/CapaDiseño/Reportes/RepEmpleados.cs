@@ -61,43 +61,32 @@ namespace CapaDiseño
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ID = Convert.ToInt32(txt_dpiempleado.Text);
-            Int32.TryParse(txt_dpiempleado.Text, out ID);
-            OdbcConnection cnx = new OdbcConnection("Dsn=Colchoneria");
-            cnx.Open();
-            //OdbcCommand cmd = new OdbcCommand("drop view `innerprueba`", cnx);
-            //cmd.ExecuteNonQuery();
-            cnx.Close();
-            cnx.Open();
+            ID = Convert.ToInt32(txt_dpiempleado.Text); /*Almanenar valor de textbox*/
+            Int32.TryParse(txt_dpiempleado.Text, out ID); /*Convertir a Int*/
+
+            OdbcConnection cnx = new OdbcConnection("Dsn=Colchoneria"); /*Variable de conexion*/
+            cnx.Open(); /*abriendo conexion*/
+            cnx.Close(); /*cerrando conexion*/
+            cnx.Open();/*abriendo conexion*/
             OdbcDataAdapter adp = new OdbcDataAdapter(
-            "SELECT tbl_empleados1.ID_Empleado, tbl_empleados1.Nombre, tbl_empleados1.Apellido, tbl_puestos1.Nombre, tbl_areas1.Nombre, tbl_contratos1.fechaInicio, tbl_contratos1.salario FROM((Db_Colchoneria.tbl_empleados tbl_empleados1 INNER JOIN Db_Colchoneria.tbl_areas tbl_areas1 ON tbl_empleados1.ID_Area = tbl_areas1.ID_Area) INNER JOIN Db_Colchoneria.tbl_contratos tbl_contratos1 ON tbl_empleados1.ID_Contrato = tbl_contratos1.ID_Contrato) INNER JOIN Db_Colchoneria.tbl_puestos tbl_puestos1 ON(tbl_empleados1.ID_Puesto = tbl_puestos1.ID_Puesto) AND(tbl_areas1.ID_Area = tbl_puestos1.ID_Area) where ID_Empleado = '"+ID+"';", cnx);
+            "SELECT tbl_empleados.ID_Empleado, tbl_empleados.Nombre,tbl_empleados.Apellido,tbl_puestos.Nombre, tbl_contratos.fechaInicio,tbl_contratos.salario from tbl_empleados inner join tbl_puestos on tbl_puestos.ID_Puesto= tbl_empleados.ID_Puesto  inner join tbl_contratos on tbl_contratos.ID_Contrato = tbl_empleados.ID_Contrato where ID_Empleado= '" + ID + "';", cnx); /*Consulta a la base de datos*/
+            DataSet dst = new DataSet(); /*objeto data set*/
+            adp.Fill(dst, "busqueda"); /*llenar en la tabla*/
 
-            DataSet dst = new DataSet();
-            adp.Fill(dst, "busqueda");
 
-
-            ReportDocument rpt = new ReportDocument();
-            rpt.Load(@"C:\Users\Richie\Desktop\UMG\8vo Ciclo\Analisis de sistemas II\Nominas\Nominas\ModuloNominas\CapaDiseño\innerjoin.rpt");
-            rpt.SetDataSource(dst.Tables["busqueda"]);
-            crystalReportViewer1.ReportSource = rpt;
-            crystalReportViewer1.Refresh();
+            ReportDocument rpt = new ReportDocument(); /*nuevo documento de reporte*/
+            rpt.Load(@"C:\Users\Richie\Desktop\UMG\8vo Ciclo\Analisis de sistemas II\Nominas\Nominas\ModuloNominas\CapaDiseño\innerjoin.rpt"); /*ruta del documento de reporte*/
+            rpt.SetDataSource(dst.Tables["busqueda"]); /*busqueda de la tabla*/
+            crystalReportViewer1.ReportSource = rpt; /*llamar a la vista del reporte*/
+            crystalReportViewer1.Refresh(); /*refrescar reporte*/
 
         }
 
         private void RepEmpleados_HelpRequested(object sender, HelpEventArgs hlpevent)
         {
-            Help.ShowHelp(this, "C://ayuda_cierre de nominas.chm");
+            Help.ShowHelp(this, "C://ayuda_cierre de nominas.chm"); /*Archivo chm de ayuda*/
         }
 
-        /*
-          "SELECT tbl_empleados.ID_Empleado, tbl_empleados.Nombre,"+
-             "tbl_empleados.Apellido, tbl_puestos.Nombre as 'Puesto', tbl_areas.Nombre as 'Area',"+
-             "tbl_contratos.fechaInicio, tbl_contratos.salario from tbl_empleados"+
-             "inner join tbl_puestos on tbl_empleados.ID_Puesto = tbl_puestos.ID_Puesto"+
-             "inner join tbl_areas on tbl_empleados.ID_Area = tbl_areas.ID_Area"+
-             "inner join tbl_contratos "+
-             "on tbl_empleados.ID_Contrato = tbl_contratos.ID_Contrato WHERE tbl_empleados.ID_Empleado = '2'"
-         */
         /*
          "Select tbl_empleados.ID_Empleado, tbl_empleados.Nombre,tbl_empleados.Apellido, tbl_puestos.Nombre  from tbl_empleados inner join tbl_puestos on tbl_empleados.ID_Puesto = tbl_puestos.ID_Puesto where Sexo = 'M'", cnx);
 */
