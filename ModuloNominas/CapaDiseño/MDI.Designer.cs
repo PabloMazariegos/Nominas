@@ -74,8 +74,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.libroDeSalariosGeneralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.generarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -176,7 +174,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(3, 1);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(402, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(494, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -354,8 +352,7 @@
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nominasToolStripMenuItem,
-            this.empleadosToolStripMenuItem2,
-            this.libroDeSalariosGeneralToolStripMenuItem});
+            this.empleadosToolStripMenuItem2});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
@@ -363,15 +360,15 @@
             // nominasToolStripMenuItem
             // 
             this.nominasToolStripMenuItem.Name = "nominasToolStripMenuItem";
-            this.nominasToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.nominasToolStripMenuItem.Text = "Nominas";
+            this.nominasToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.nominasToolStripMenuItem.Text = "Libro General";
             this.nominasToolStripMenuItem.Click += new System.EventHandler(this.nominasToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem2
             // 
             this.empleadosToolStripMenuItem2.Name = "empleadosToolStripMenuItem2";
-            this.empleadosToolStripMenuItem2.Size = new System.Drawing.Size(204, 22);
-            this.empleadosToolStripMenuItem2.Text = "Empleados";
+            this.empleadosToolStripMenuItem2.Size = new System.Drawing.Size(178, 22);
+            this.empleadosToolStripMenuItem2.Text = "Libro Por Empleado";
             this.empleadosToolStripMenuItem2.Click += new System.EventHandler(this.empleadosToolStripMenuItem2_Click);
             // 
             // herramientasToolStripMenuItem
@@ -481,20 +478,6 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "Fecha: ";
             // 
-            // libroDeSalariosGeneralToolStripMenuItem
-            // 
-            this.libroDeSalariosGeneralToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.generarToolStripMenuItem});
-            this.libroDeSalariosGeneralToolStripMenuItem.Name = "libroDeSalariosGeneralToolStripMenuItem";
-            this.libroDeSalariosGeneralToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.libroDeSalariosGeneralToolStripMenuItem.Text = "Libro De Salarios General";
-            // 
-            // generarToolStripMenuItem
-            // 
-            this.generarToolStripMenuItem.Name = "generarToolStripMenuItem";
-            this.generarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.generarToolStripMenuItem.Text = "Generar";
-            // 
             // MDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -580,8 +563,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem polizasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contratosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem libroDeSalariosGeneralToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem generarToolStripMenuItem;
     }
 }
 

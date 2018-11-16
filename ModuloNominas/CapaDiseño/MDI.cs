@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CapaDiseño.Procesos;
 using CapaDiseño.Procesos.Liquidacion;
 
+
 namespace CapaDiseño
 {
     public partial class MDI : Form
@@ -199,5 +200,20 @@ namespace CapaDiseño
             chld.StartPosition = FormStartPosition.CenterScreen;
             chld.Show();
         }
+
+        private void generarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void libroGeneralToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            R_General chld= new R_General();
+           chld.MdiParent = this;
+            chld.StartPosition = FormStartPosition.CenterScreen;
+            chld.Show();
+        }
+
+       
     }
 }

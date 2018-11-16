@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CapaDiseño.Reportes {
+namespace CapaDiseño {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace CapaDiseño.Reportes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class CrystalReport1 : ReportClass {
+    public class ReporteGeneral : ReportClass {
         
-        public CrystalReport1() {
+        public ReporteGeneral() {
         }
         
         public override string ResourceName {
             get {
-                return "CrystalReport1.rpt";
+                return "ReporteGeneral.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace CapaDiseño.Reportes {
         
         public override string FullResourceName {
             get {
-                return "CapaDiseño.Reportes.CrystalReport1.rpt";
+                return "CapaDiseño.ReporteGeneral.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace CapaDiseño.Reportes {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedCrystalReport1 : Component, ICachedReport {
+    public class CachedReporteGeneral : Component, ICachedReport {
         
-        public CachedCrystalReport1() {
+        public CachedReporteGeneral() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace CapaDiseño.Reportes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            CrystalReport1 rpt = new CrystalReport1();
+            ReporteGeneral rpt = new ReporteGeneral();
             rpt.Site = this.Site;
             return rpt;
         }

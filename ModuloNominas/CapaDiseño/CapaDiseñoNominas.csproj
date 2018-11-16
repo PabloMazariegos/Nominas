@@ -49,8 +49,16 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\..\..\Desktop\Navegador\CapaLogica\obj\Debug\CapaLogica.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Documents\Visual Studio 2015\Projects\PRUEBABETA\PRUEBABETA\bin\Debug\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,6 +75,12 @@
     </Compile>
     <Compile Include="Catalogos\CatAreas.Designer.cs">
       <DependentUpon>CatAreas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="innerjoin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>innerjoin.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Procesos\Mantenimientos\ManContratos.cs">
       <SubType>Form</SubType>
@@ -154,6 +168,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteGeneral.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteGeneral.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reportes\RepEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,11 +186,21 @@
     <Compile Include="Reportes\RepCierre.designer.cs">
       <DependentUpon>RepCierre.cs</DependentUpon>
     </Compile>
+    <Compile Include="R_General.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R_General.Designer.cs">
+      <DependentUpon>R_General.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Catalogos\CatAreas.resx">
       <DependentUpon>CatAreas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Catalogos\CatPrestaciones.resx">
       <DependentUpon>CatPrestaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="innerjoin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>innerjoin.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Mantenimientos\ManContratos.resx">
       <DependentUpon>ManContratos.cs</DependentUpon>
@@ -216,11 +246,18 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteGeneral.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteGeneral.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\RepEmpleados.resx">
       <DependentUpon>RepEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\RepCierre.resx">
       <DependentUpon>RepCierre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_General.resx">
+      <DependentUpon>R_General.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -278,6 +315,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\archivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
